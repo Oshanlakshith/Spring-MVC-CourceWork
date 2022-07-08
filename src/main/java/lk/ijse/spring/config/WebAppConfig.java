@@ -9,8 +9,4 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @ComponentScan(basePackages = "lk.ijse.spring")
 public class WebAppConfig {
-    @Bean
-    public void name(){
-        System.out.println("testing");
-    }
 }
