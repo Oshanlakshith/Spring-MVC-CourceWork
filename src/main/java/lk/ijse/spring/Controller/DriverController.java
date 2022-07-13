@@ -40,10 +40,4 @@ public class DriverController {
         return new ResponceUtil(200, "Delete", null);
     }
 
-    @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponceUtil searchDriver(@PathVariable String id) {
-        driverServise.searchDriver(id);
-        return new ResponceUtil(200, "Search", null);
-
-    }
 }
