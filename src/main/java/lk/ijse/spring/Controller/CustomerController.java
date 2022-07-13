@@ -28,6 +28,12 @@ public class CustomerController {
         return new ResponceUtil(200, "AllCustomer", customerService.getAllCustomers());
     }
 
+    @DeleteMapping(params = {"id"}, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponceUtil deleteCustomer(@RequestParam String id) {
+        customerService.deleteCustomer(id);
+        return new ResponceUtil(200, "Delete", null);
+    }
+
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponceUtil updateCustomer(@RequestBody customerDTO customer) {
         customerService.updateCustomer(customer);

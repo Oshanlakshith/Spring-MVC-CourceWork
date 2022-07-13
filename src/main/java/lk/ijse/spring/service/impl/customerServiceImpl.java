@@ -40,6 +40,15 @@ public class customerServiceImpl implements customerService {
     }
 
     @Override
+    public void deleteCustomer(String id) {
+        if(repo.existsById(id)){
+            repo.deleteById(id);
+        }else{
+            throw new RuntimeException("No Customer for" +id+ "..!");
+        }
+    }
+
+    @Override
     public customerDTO searchCustomer(String id) {
        if (repo.existsById(id)){
            return mapper.map(repo.findById(id).get(),customerDTO.class);
