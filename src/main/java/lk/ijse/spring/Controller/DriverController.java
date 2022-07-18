@@ -1,5 +1,4 @@
 package lk.ijse.spring.Controller;
-
 import lk.ijse.spring.dto.driverDTO;
 import lk.ijse.spring.service.driverServise;
 import lk.ijse.spring.util.ResponceUtil;
@@ -39,5 +38,8 @@ public class DriverController {
         driverServise.deleteDrivers(id);
         return new ResponceUtil(200, "Delete", null);
     }
-
+    @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponceUtil searchCustomer(@PathVariable String id) {
+        return new ResponceUtil(200, "Ok", driverServise.searchDriver(id));
+    }
 }
