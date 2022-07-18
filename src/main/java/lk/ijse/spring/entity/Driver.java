@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Data
 @ToString
-public class driver {
+public class Driver {
     @Id
     private String DId;
     private String dname;

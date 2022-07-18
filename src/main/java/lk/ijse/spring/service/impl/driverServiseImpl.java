@@ -1,6 +1,6 @@
 package lk.ijse.spring.service.impl;
 import lk.ijse.spring.dto.driverDTO;
-import lk.ijse.spring.entity.driver;
+import lk.ijse.spring.entity.Driver;
 import lk.ijse.spring.repo.driverRepo;
 import lk.ijse.spring.service.driverServise;
 import org.modelmapper.ModelMapper;
@@ -25,7 +25,7 @@ public class driverServiseImpl implements driverServise {
     @Override
     public void saveDriver(driverDTO dto) {
         if (!repo.existsById(dto.getDId())) {
-            repo.save(mapper.map(dto, driver.class));
+            repo.save(mapper.map(dto, Driver.class));
         } else {
             throw new RuntimeException("Driver save Alredy");
         }
@@ -34,7 +34,7 @@ public class driverServiseImpl implements driverServise {
     @Override
     public void updateDriver(driverDTO dto) {
         if (repo.existsById(dto.getDId())) {
-            repo.save(mapper.map(dto, driver.class));
+            repo.save(mapper.map(dto, Driver.class));
         } else {
             throw new RuntimeException("Check The Id");
         }

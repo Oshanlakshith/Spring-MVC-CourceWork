@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Data
 @ToString
-public class customer {
+public class Customer {
     @Id
     private String cId;
     private String cname;

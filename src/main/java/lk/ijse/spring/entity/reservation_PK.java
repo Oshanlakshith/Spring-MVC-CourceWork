@@ -1,6 +1,5 @@
 package lk.ijse.spring.entity;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +9,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class orderItem_PK implements Serializable {
-    private String oid;
-    private String carId;
+public class reservation_PK implements Serializable {
+    private String DId;
+    private String cId;
 }
