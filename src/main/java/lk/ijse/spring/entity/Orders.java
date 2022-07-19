@@ -16,7 +16,7 @@ import java.util.List;
 @Entity
 public class Orders {
     @Id
-    private String oId;
+    private String orderId;
     private LocalDate date;
 
     @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
@@ -24,5 +24,5 @@ public class Orders {
     private Customer customer;
 
     @OneToMany(mappedBy = "orders",cascade = CascadeType.ALL)
-    private List<orderDetails>orderDetails;
+    private List<OrderDetails>orderDetails;
 }

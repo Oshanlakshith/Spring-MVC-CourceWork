@@ -1,6 +1,6 @@
 package lk.ijse.spring.Controller;
 
-import lk.ijse.spring.dto.customerDTO;
+import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.service.customerService;
 import lk.ijse.spring.util.ResponceUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ public class CustomerController {
 
     @ResponseStatus(HttpStatus.CREATED) //201
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponceUtil saveCustomer(customerDTO customerDTO) {
+    public ResponceUtil saveCustomer(CustomerDTO customerDTO) {
         customerService.saveCustomer(customerDTO);
         return new ResponceUtil(200, "Save Customer", null);
     }
@@ -35,7 +35,7 @@ public class CustomerController {
     }
 
     @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponceUtil updateCustomer(@RequestBody customerDTO customer) {
+    public ResponceUtil updateCustomer(@RequestBody CustomerDTO customer) {
         customerService.updateCustomer(customer);
         return new ResponceUtil(200, "Update", null);
     }

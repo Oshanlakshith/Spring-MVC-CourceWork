@@ -2,7 +2,7 @@ package lk.ijse.spring.service.impl;
 
 import lk.ijse.spring.dto.carDTO;
 import lk.ijse.spring.entity.Car;
-import lk.ijse.spring.repo.carRepo;
+import lk.ijse.spring.repo.CarRepo;
 import lk.ijse.spring.service.carService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -17,7 +17,7 @@ import java.util.List;
 public class carServiceImpl implements carService {
 
     @Autowired
-    carRepo repo;
+    CarRepo repo;
 
     @Autowired
     ModelMapper mapper;

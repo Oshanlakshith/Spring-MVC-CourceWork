@@ -1,6 +1,5 @@
 package lk.ijse.spring.service;
 
-import lk.ijse.spring.dto.customerDTO;
 import lk.ijse.spring.dto.driverDTO;
 
 import java.util.List;

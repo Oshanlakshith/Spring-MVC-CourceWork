@@ -1,6 +1,6 @@
 package lk.ijse.spring.service.impl;
 
-import lk.ijse.spring.dto.customerDTO;
+import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
 import lk.ijse.spring.repo.customerRepo;
 import lk.ijse.spring.service.customerService;
@@ -22,7 +22,7 @@ public class customerServiceImpl implements customerService {
     private ModelMapper mapper;
 
     @Override
-    public void saveCustomer(customerDTO dto) {
+    public void saveCustomer(CustomerDTO dto) {
         if (!repo.existsById(dto.getCId())) {
             repo.save(mapper.map(dto, Customer.class));
         }else{
@@ -31,7 +31,7 @@ public class customerServiceImpl implements customerService {
     }
 
     @Override
-    public void updateCustomer(customerDTO dto) {
+    public void updateCustomer(CustomerDTO dto) {
         if(repo.existsById(dto.getCId())){
             repo.save(mapper.map(dto, Customer.class));
         }else {
@@ -49,17 +49,17 @@ public class customerServiceImpl implements customerService {
     }
 
     @Override
-    public customerDTO searchCustomer(String id) {
+    public CustomerDTO searchCustomer(String id) {
        if (repo.existsById(id)){
-           return mapper.map(repo.findById(id).get(),customerDTO.class);
+           return mapper.map(repo.findById(id).get(), CustomerDTO.class);
        }else {
            throw new RuntimeException("No Customer for" +id+ "..!");
        }
     }
 
     @Override
-    public List<customerDTO> getAllCustomers() {
-     return mapper.map(repo.findAll(),new TypeToken<List<customerDTO>>(){
+    public List<CustomerDTO> getAllCustomers() {
+     return mapper.map(repo.findAll(),new TypeToken<List<CustomerDTO>>(){
      }.getType());
     }
 }

@@ -13,19 +13,19 @@ import javax.persistence.*;
 @Entity
 @ToString
 @IdClass(orderItem_PK.class)
-public class orderDetails {
+public class OrderDetails {
     @Id
-    private String oid;
+    private String orderId;
     @Id
     private String carId;
-    private String date;
+    private int qty;
     private String price;
 
     @ManyToOne
-    @JoinColumn(name = "oid",referencedColumnName = "oid",insertable = false,updatable = false)
+    @JoinColumn(name = "orderId",referencedColumnName = "orderId",insertable = false,updatable = false)
     private Orders orders;
 
     @ManyToOne
-    @JoinColumn(name = "carId",referencedColumnName = "carId",insertable = false,updatable = false)
+    @JoinColumn(name = "CarId",referencedColumnName = "carId",insertable = false,updatable = false)
     private Car car;
 }

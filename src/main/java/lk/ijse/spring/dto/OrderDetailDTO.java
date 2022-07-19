@@ -9,11 +9,9 @@ import lombok.ToString;
 @NoArgsConstructor
 @Data
 @ToString
-public class carDTO {
+public class OrderDetailDTO {
+    private String orderId;
     private String carId;
-    private String plateNo;
-    private String DailyPrice;
-    private String miladge;
-    private int carQty;
-    private String Model;
+    private int qty;
+    private String price;
 }

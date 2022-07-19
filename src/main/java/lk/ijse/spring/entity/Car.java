@@ -19,5 +19,6 @@ public class Car {
     private String plateNo;
     private String DailyPrice;
     private String miladge;
+    private int carQty;
     private String Model;
 }

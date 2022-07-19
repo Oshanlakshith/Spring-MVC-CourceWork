@@ -1,7 +1,7 @@
 package lk.ijse.spring.service.impl;
 import lk.ijse.spring.dto.driverDTO;
 import lk.ijse.spring.entity.Driver;
-import lk.ijse.spring.repo.driverRepo;
+import lk.ijse.spring.repo.DriverRepo;
 import lk.ijse.spring.service.driverServise;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -16,7 +16,7 @@ import java.util.List;
 public class driverServiseImpl implements driverServise {
 
     @Autowired
-    private driverRepo repo;
+    private DriverRepo repo;
 
     @Autowired
     private ModelMapper mapper;
