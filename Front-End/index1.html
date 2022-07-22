@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Car Rental</title>
-    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
-    <meta name="theme-color" content="Dark Blue">
-    <link href="assets/css/normalize.css" rel="stylesheet">
-    <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>How to design car template</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style>
 
@@ -17,6 +16,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Ibarra Real Nova', serif;
     }
 
     a, a:hover {
@@ -35,7 +35,7 @@
     .header {
         width: 100%;
         height: 100vh;
-        background-color: #26284e;
+        background-color: #2a0909;
     }
 
     .header .nav-bar {
@@ -73,7 +73,7 @@
         opacity: 0.6;
     }
 
-    .header .nav-bar .menu ul li a.home {
+    .header .nav-bar .menu ul li a script .home {
         opacity: 1;
     }
 
@@ -81,7 +81,7 @@
         opacity: 1;
     }
 
-    .header .nav-bar .social-media ul li i {
+    .header .nav-bar .social-media ul li i{
         width: 45px;
         height: 45px;
         line-height: 45px;
@@ -92,6 +92,11 @@
         font-size: 19px;
         background-color: #cac5c542;
         transition: all 0.3s ease-in-out;
+    }
+
+    .header .nav-bar .social-media i:hover{
+        cursor: pointer;
+        color: red;
     }
 
     .hero {
@@ -130,7 +135,7 @@
         padding-right: 150px;
     }
 
-    .hero .row .left-sec .button {
+    .hero .row .left-sec .discover-btn {
         display: flex;
         align-items: center;
         outline: none;
@@ -140,10 +145,10 @@
         padding: 0 25px;
         background-color: #d43242;
         border: 3px solid #ffa938;
-        box-shadow: 5px 7px 20px #000;
+        box-shadow: 5px 7px 20px #557d78;
     }
 
-    .hero .row .left-sec .button span a {
+    .hero .row .left-sec .discover-btn span a {
         color: #fff;
         font-size: 25px;
         letter-spacing: 2px;
@@ -151,8 +156,8 @@
         text-transform: capitalize;
     }
 
-    .hero .row .left-sec .button span {
-        color: #fff;
+    .hero .row .left-sec .discover-btn span {
+        color: #7f3333;
         font-size: 60px;
     }
 
@@ -176,25 +181,38 @@
         padding-right: 0;
         letter-spacing: 1px;
     }
+
+    .hero .right-sec {
+        width: 70%;
+        padding-top: 100px;
+    }
+
+    .hero .right-sec img {
+        width: 950px;
+        height: 550px;
+        margin: auto;
+        float: right;
+    }
 </style>
+
 <body>
-<section class="header" id="header">
+<section id="header" class="header">
     <div class="nav-bar">
         <div class="logo">
-            <a href="#">Chevrolet</a>
+            <a href="index.html">Chevrolet<span>.</span></a>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#" class="home">Home</a></li>
-                <li><a href="#">Cars</a></li>
+                <li><a href="#" class="home">Home<span></span></a></li>
+                <li><a href="#">Car</a></li>
+                <li><a href="#">Technology</a></li>
                 <li><a href="#">Reviews</a></li>
-                <li><a href="#">Order</a></li>
             </ul>
         </div>
         <div class="social-media">
             <ul>
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </div>
@@ -203,38 +221,91 @@
         <div class="row">
             <div class="left-sec">
                 <div class="content">
-                    <h2><span>chevrolet</span><br>camaro</h2>
+                    <h2><span>Chevrolet</span><br>Camaro</h2>
                     <p>It is a long established fact that a set reader will distracted by the readable content of a page
                         when looking at its layout technology.</p>
                 </div>
-                <button class="button">
-                    <a href="#">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                <button class="discover-btn">
+                    <a href="#">Loging</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
                 </button>
                 <div class="information">
-                <div class="production" >
-                    <p>Production</p>
-                    <h2>1966-2020</h2>
-                </div>
-                <div class="production">
-                    <p>Desiger</p>
-                    <h2>George Angersbach</h2>
-                </div>
+                    <div class="production">
+                        <p>Production</p>
+                        <h2>1966-2019</h2>
+                    </div>
+                    <div class="production">
+                        <p>Designer</p>
+                        <h2>George Angersbach</h2>
+                    </div>
                 </div>
             </div>
             <div class="right-sec">
-                <div class="my-car">
-                    <div><img src=""></div>
-                    <div><img src=""></div>
-                    <div><img src=""></div>
-                    <div><img src=""></div>
-                    <div><img src=""></div>
+                <div class="my-car slick-initialized slick-slider slick-dotted">
+                    <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous
+                    </button>
+                    <div class="slick-list draggable">
+                        <div class="slick-track"
+                             style="opacity: 1; width: 10538px; transform: translate3d(-1916px, 0px, 0px);">
+                            <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true"
+                                 tabindex="-1" style="width: 958px;">
+                                <img src="assets/images/1.png"></div>
+                            <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1"
+                                 role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00"
+                                 style="width: 958px;">
+                                <img src="assets/images/1.png">
+                            </div>
+                            <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false"
+                                 tabindex="0" role="tabpanel" id="slick-slide01"
+                                 aria-describedby="slick-slide-control01" style="width: 958px;">
+                                <img src="assets/images/1.png"></div>
+                            <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"
+                                 role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02"
+                                 style="width: 958px;">
+                                <img src="assets/images/1.png"></div>
+                            <div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1"
+                                 role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03"
+                                 style="width: 958px;">
+                                <img src="assets/images/1.png"></div>
+                            <div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1"
+                                 role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04"
+                                 style="width: 958px;">
+                                <img src="assets/images/1.png"></div>
+                            <div class="slick-slide slick-cloned" data-slick-index="5"  aria-hidden="true"
+                                 tabindex="-1" style="width: 958px;">
+                                <img src="assets/images/1.png"></div>
+                            <div class="slick-slide slick-cloned" data-slick-index="6"  aria-hidden="true"
+                                 tabindex="-1" style="width: 958px;">
+                                <img src="assets/images/1.png"></div>
+                            <div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true"
+                                 tabindex="-1" style="width: 958px;">
+                                <img src="assets/images/1.png"></div>
+                            <div class="slick-slide slick-cloned" data-slick-index="8" aria-hidden="true"
+                                 tabindex="-1" style="width: 958px;"><img src="assets/images/1.png"></div>
+                            <div class="slick-slide slick-cloned" data-slick-index="9"  aria-hidden="true"
+                                 tabindex="-1" style="width: 958px;"><img src="assets/images/1.png"></div>
+                        </div>
+                    </div>
 
+
+                    <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+                    <ul class="slick-dots" style="" role="tablist">
+                        <li class="" role="presentation"><a>1</a></li>
+                        <li role="presentation" class="slick-active"><a>2</a></li>
+                        <li role="presentation" class=""><a>3</a></li>
+                        <li role="presentation" class=""><a>4</a></li>
+                        <li role="presentation" class=""><a>5</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+
+</script>
+
 </body>
-</html>
