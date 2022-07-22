@@ -5,9 +5,142 @@
     <title>Car Rental</title>
     <link href="assets/bootstrap-5.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+
+    #secondDiv {
+        height: 50%;
+        background-size: cover;
+        background: url("assets/image/img_1.png");
+        z-index: 2;
+
+    }
+    #thardDiv {
+        height: 30%;
+        background-color: black;
+    }
+
+    #navbar {
+        background: red;
+        height: 20%;
+    }
+
+    #navigateImage {
+        height: 50%;
+        background-color: orange;
+    }
+
+
+    .container-appointment {
+        top: 138px;
+        position: relative;
+        max-width: 800px;
+        margin: 20px auto 0;
+        padding: 30px 60px 20px;
+        background: #fafafa;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 0 4px 4px rgb(0 0 0 / 20%);
+        box-shadow: 0 0 4px 4 pxrgba(0, 0, 0, .2);
+    }
+
+    .container-appointment .title {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 3em;
+        line-height: 48px;
+        padding-bottom: 20px;
+        color: #5543ca;
+        background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    .texBox .input-text {
+        justify-content: center;
+        position: relative;
+        left: 127px;
+        width: 380px;
+        margin: auto;
+    }
+
+    .button-primary--red {
+        width: 100%;
+        margin: 15px auto 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .texBox .button {
+        width: 208%;
+    }
+
+    .combo {
+        width: 385px;
+        height: 39px;
+        top: 11px;
+        left: 125px;
+        position: relative;
+        margin: auto;
+    }
+
+    .images > div {
+        width: 100vw;
+    }
+
+</style>
 <body>
-<section class="container-fluid p-4 bg-primary text-white">
-    <h1 class="fw-bold">AJAX With jQuery</h1>
+
+<section>
+    <nav id="navbar" class="navbar navbar-expand-lg col-lg-12">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Car Rental</a>
+        </div>
+    </nav>
+    <div id="secondDiv">
+        <div class="image">
+
+        </div>
+        <div class="container-appointment">
+            <h1 class="title">Car Rental Service</h1>
+            <div class="containerForm">
+                <div class="texBox">
+                    <div class="form-field col-lg-6">
+                        <label for="name" class="label">Name</label>
+                        <input id="name" class="input-text" type="text" name="">
+                    </div>
+                    <div class="form-field col-lg-6">
+                        <button class="combo btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                    </div>
+                    <div class="form-field col-lg-6">
+                        <label for="date" class="label">Date</label>
+                        <input id="date" class="input-text" type="text" name="">
+
+                    </div>
+                    <div class="form-field col-lg-6">
+                        <button type="button"
+                                class="button bg-danger  button-primary button-primary--red btn btn-block btn-main-search"
+                                style="margin: 12px auto 0"><i class="fa fa-search"></i> Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="navigateImage">
+
+    </div>
+
+    <div id="thardDiv">
+
+    </div>
 </section>
 </body>
 </html>
