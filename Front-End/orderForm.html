@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .image {
+        background-image: url("assets/images/1.png");
+    }
+
+    .borde {
+        width: 800px;
+        border-radius: 20px;
+        height: 311px;
+        border: 2px solid #7d6c6c;
+    }
+
+    .button {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    .cardborder {
+        width: 785px;
+        border-radius: 20px;
+        position: relative;
+        left: 1px;
+        height: 256px;
+        border: 2px solid #baa4a4;
+    }
+</style>
+<body>
+<section class=" image container-fluid p-4 bg-danger text-white">
+    <h1 class="fw-bold">Rent a Car</h1>
+</section>
+<section class="image1 container-fluid mt-3">
+
+    <!--    Rent save-->
+    <div class="row mt-3">
+        <div class="col-4">
+            <form id="customerForm">
+                <div class="borde">
+                    <div class="row fw-bold">
+                        <div class="col-lg-6">
+                            <label class="form-label" for="rId">Reservation ID</label>
+                            <input class="form-control" id="rId" name="rid" placeholder="Reservation ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="rcId">Customer ID</label>
+                            <input class="form-control" id="rcId" name="rid" placeholder="Reservation Cus ID"
+                                   type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="rdId">Driver ID</label>
+                            <input class="form-control" id="rdId" name="dId" placeholder="Driver ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="plateId">Driver ID</label>
+                            <input class="form-control" id="plateId" name="plateId" placeholder="Plate ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="pDate">pickup Date</label>
+                            <input class="form-control" id="pDate" name="pdate" placeholder="Pickup ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="plocation">pickup Location</label>
+                            <input class="form-control" id="plocation" name="plocation" placeholder="Pickup Location"
+                                   type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="noofdays">No Of Days</label>
+                            <input class="form-control" id="noofdays" name="days" placeholder="No of Days" type="text">
+                        </div>
+                    </div>
+                        <div class=" cardborder mt-lg-5">
+                            <div class="col-lg-6">
+                                <label class="form-label" for="holdername">Cardholder' s Name</label>
+                                <input class="form-control" id="holdername" name="hname" placeholder="" type="text">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form-label" for="cnumber">Card Number</label>
+                                <input class="form-control" id="cnumber" name="cnumber" placeholder="" type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label class="form-label" for="expDate">Expiration Date</label>
+                                    <input class="form-control" id="expDate" name="expDate" placeholder="MM/YY" type="text">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label class="form-label" for="cvc">CVC</label>
+                                    <input class="form-control" id="cvc" name="cvc"  placeholder="" type="text">
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="mt-5">
+                        <button class=" button btn btn-success" id="btnSaveCustomer" type="button">Book Now</button>
+                        <button class=" button btn btn-primary " id="btnGetAllCustomers" type="button">Get All</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--
+                <div class="col">
+                    <table class="table table-bordered table-hover">
+                        <thead class="bg-danger text-white">
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Customer Name</th>
+                            <th>Customer Address</th>
+                            <th>House No</th>
+                            <th>Driving Licen</th>
+                            <th>Teliphone No</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblCustomerJson">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+        -->
+    </div>
+</section>
+
+</body>
+</html>

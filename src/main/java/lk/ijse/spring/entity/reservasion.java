@@ -23,6 +23,7 @@ public class reservasion {
     private String palteNo;
     private String ReservasionDate;
     private String pickupdate;
+    private String time;
     private String pickupLocation;
     private String NoOfDays;
     private String cancelation;

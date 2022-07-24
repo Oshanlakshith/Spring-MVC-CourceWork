@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Register</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+
+    .image{
+      position: relative;
+      left: 300px;
+      right: 0;
+      margin: auto;
+  }
+</style>
+<body>
+<section class="container-fluid p-4 bg-danger text-white">
+    <h1 class="fw-bold text-center">Driver Form</h1>
+</section>
+<img src="assets/images/sCarGroup.png" class= image alt="...">
+
+<section class="container-fluid mt-3">
+    <!--    customer save-->
+    <div class="row mt-3">
+        <div class="col-4">
+            <form id="customerForm">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label class="form-label" for="driverId">Driver ID</label>
+                        <input class="form-control" id="driverId" name="id" placeholder="Driver ID" type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="drivername">Driver Name</label>
+                        <input class="form-control" id="drivername" name="name" placeholder="Driver Name"
+                               type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="driveraddress">Driver Address</label>
+                        <input class="form-control" id="driveraddress" name="address" placeholder="Driver Address"
+                               type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="driversalary">Driver Salary</label>
+                        <input class="form-control" id="driversalary" name="salary" placeholder="Driver salary"
+                               type="text">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label class="form-label" for="driverTel">Driver Teliphone</label>
+                        <input class="form-control" id="driverTel" name="houseNo" placeholder="driverTel"
+                               type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="Driverlicen">Driving Licen</label>
+                        <input class="form-control" id="Driverlicen" name="licen" placeholder="Driving jDate"
+                               type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="djdate">Driving JoinDate</label>
+                        <input class="form-control" id="djdate" name="joindate" placeholder="Driving jDate"
+                               type="text">
+                    </div>
+
+                    <div class="mt-5 mt-5">
+                        <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
+                        <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
+                        <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
+                        <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>Driver ID</th>
+                    <th>Driver Name</th>
+                    <th>Driver Address</th>
+                    <th>Driver Salary</th>
+                    <th>Teliphone</th>
+                    <th>Driver Licen</th>
+                    <th>Join Date</th>
+
+                </tr>
+                </thead>
+                <tbody id="tblCustomerJson">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
