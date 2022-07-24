@@ -17,6 +17,7 @@ public class CustomerDTO {
     @Id
     private String cId;
     private String cname;
+    private String address;
     private String DrivingLicence;
     private String city;
     private  String houseNo;
