@@ -1,16 +1,18 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>How to design car template</title>
-    <meta content="" name="descriptison">
-    <meta content="" name="keywords">
+    <title>Car-Rental</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
           rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
           href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/nomerlize" rel="stylesheet">
+
+
 </head>
 <style>
 
@@ -33,9 +35,10 @@
     li {
         display: inline-block;
     }
+
     .header {
         width: 100%;
-        height: 100vh;
+        height: 112vh;
         background-color: #2a0909;
     }
 
@@ -168,6 +171,16 @@
         margin-top: 100px;
     }
 
+    .hero .right-sec img {
+        width: 954px;
+        height: 550px;
+        margin: auto;
+        left: 371px;
+        top: -712px;
+        position: absolute;
+        float: right;
+    }
+
     .hero .information .production {
         margin-right: 50px;
         line-height: 3px;
@@ -194,9 +207,168 @@
         margin: auto;
         float: right;
     }
+
+    .secoundForm .topImage {
+        position: relative;
+        left: 365px;
+        right: 0;
+        margin: auto;
+
+    }
+
+    .carForm {
+        height: 45vh;
+        width: 100%;
+        border: 2px solid #f3f1ef;
+    }
+
+    .carForm .carImage {
+        position: absolute;
+        left: 71px;
+        width: 0;
+        margin: auto;
+    }
+
+    .carForm .carImage img {
+        width: 403px;
+        margin: auto;
+    }
+
+    .carForm .carDetails {
+        height: 43vh;
+        width: 0;
+    }
+
+    .carDetails {
+        background-color: #3c5168;
+    }
+
+    .carForm .carDetails h3 {
+        position: absolute;
+        color: #992f2f;
+        font-size: 28px;
+        text-align: center;
+        left: 700px;
+        top: 351px;
+    }
+
+    .icon ul {
+        font-size: 20px;
+        position: absolute;
+        margin: auto;
+        left: 477px;
+    }
+
+    ul {
+        display: inline-block;
+
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .carForm .icon ul li {
+        font-size: 20px;
+        color: black;
+        margin-right: 30px;
+
+    }
+
+    .carForm .icon ul li i {
+        font-size: 19px;
+        letter-spacing: 2px;
+        padding: 20px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        transition: all 0.5s;
+        opacity: 0.6;
+    }
+
+    .topImage {
+        position: relative;
+        left: 388px;
+        top: 0;
+        margin: auto;
+    }
+
+    .Carprice {
+        position: absolute;
+        right: 0;
+        left: 13px;
+        margin: auto;
+        color: green;
+    }
+
+    #LinkVehicle {
+        background-color: green;
+    }
+
+    button.button {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: green;
+        border: none;
+        border-radius: 10px;
+        position: relative;
+        font-weight: bold;
+        color: white;
+        width: 100px;
+        font-size: 19px;
+        height: 50px;
+        top: 173px;
+        left: 1000px;
+        right: 739px;
+        margin: auto;
+        /* top: 1px; */
+    }
+
+    .name {
+        bottom: 435px;
+        position: relative;
+    }
+
+    .image {
+        position: relative;
+        left: 300px;
+        width: 600px;
+        right: 0;
+        margin: auto;
+    }
+
+    .borde {
+        width: 800px;
+        border-radius: 20px;
+        height: 311px;
+        border: 2px solid #7d6c6c;
+    }
+
+    .button {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .cardborder {
+        width: 785px;
+        border-radius: 20px;
+        position: relative;
+        left: 1px;
+        height: 256px;
+        border: 2px solid #baa4a4;
+    }
+
+    .customerborder {
+
+    }
+
+    .HomeImage {
+        position: absolute;
+    }
 </style>
 
 <body>
+<!--
+dash Board Form
+-->
 <section id="header" class="header">
     <div class="nav-bar">
         <div class="logo">
@@ -210,13 +382,12 @@
                 <li><a href="#">Reviews</a></li>
             </ul>
         </div>
-        <div class="social-media">
-            <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
     </div>
     <div class="hero">
         <div class="row">
@@ -226,62 +397,28 @@
                     <p>It is a long established fact that a set reader will distracted by the readable content of a page
                         when looking at its layout technology.</p>
                 </div>
-                <button class="discover-btn">
+                <button id="LinkVehicle" class="discover-btn">
                     <a href="#">Loging</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
                 </button>
-                <div class="information">
-                    <div class="production">
-                        <p>Production</p>
-                        <h2>1966-2019</h2>
-                    </div>
-                    <div class="production">
-                        <p>Designer</p>
-                        <h2>George Angersbach</h2>
-                    </div>
-                </div>
+                <button class="discover-btn">
+                    <a href="#">Admin Form</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+
+                </button>
+
             </div>
             <div class="right-sec">
-                <div class="my-car slick-initialized slick-slider slick-dotted">
-                    <div class="slick-list draggable">
-                        <div class="slick-track"
-                             style="opacity: 1; width: 10538px; transform: translate3d(-1916px, 0px, 0px);">
+                <div class="my-car">
+                    <div>
+                        <div>
                             <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true"
                                  tabindex="-1" style="width: 958px;">
                                 <img src="assets/images/1.png"></div>
-                            <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1"
+                            <div class="HomeImage" data-slick-index="0" aria-hidden="true" tabindex="-1"
                                  role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00"
                                  style="width: 958px;">
                                 <img src="assets/images/1.png">
                             </div>
-                            <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false"
-                                 tabindex="0" role="tabpanel" id="slick-slide01"
-                                 aria-describedby="slick-slide-control01" style="width: 958px;">
-                                <img src="assets/images/1.png"></div>
-                            <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"
-                                 role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02"
-                                 style="width: 958px;">
-                                <img src="assets/images/1.png"></div>
-                            <div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1"
-                                 role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03"
-                                 style="width: 958px;">
-                                <img src="assets/images/1.png"></div>
-                            <div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1"
-                                 role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04"
-                                 style="width: 958px;">
-                                <img src="assets/images/1.png"></div>
-                            <div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true"
-                                 tabindex="-1" style="width: 958px;">
-                                <img src="assets/images/1.png"></div>
-                            <div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true"
-                                 tabindex="-1" style="width: 958px;">
-                                <img src="assets/images/1.png"></div>
-                            <div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true"
-                                 tabindex="-1" style="width: 958px;">
-                                <img src="assets/images/1.png"></div>
-                            <div class="slick-slide slick-cloned" data-slick-index="8" aria-hidden="true"
-                                 tabindex="-1" style="width: 958px;"><img src="assets/images/1.png"></div>
-                            <div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true"
-                                 tabindex="-1" style="width: 958px;"><img src="assets/images/1.png"></div>
+
                         </div>
                     </div>
 
@@ -298,11 +435,419 @@
         </div>
     </div>
 </section>
+<!--Vehicle Form-->
+<section id="vehicleSelectContext">
+    <img class="topImage" src="assets/images/sCarGroup.png" alt="...">
+
+    <div class="carForm">
+        <div class="carImage">
+            <img src="assets/images/rentcar1.png" class="rounded" alt="...">
+        </div>
+        <div class="carDetails">
+            <div>
+                <h3>Honda City</h3>
+            </div>
+            <div class="icon">
+                <ul>
+                    <li><i class="fa fa-users">Peoples</i>4 pacengers</li>
+                    <li><i class="fa fa-industry">Mileage</i>10/1</li>
+                    <div>
+                        <li><i class="fa fa-instagram">Fuel Policy</i>Full</li>
+                        <li><i class="fa fa-bullseye">Air ballon</i>6 air Ballon</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="Carprice">
+                <h4>Daily price</h4>
+                <h2>$ 70.00</h2>
+            </div>
+            <button type="button" class="button">Select</button>
+        </div>
+    </div>
+    <div class="carForm">
+        <div class="carImage">
+            <img src="assets/images/waganr.png" class="rounded" alt="...">
+        </div>
+        <div class="carDetails">
+            <div class="name">
+                <h3>Wagenr</h3>
+            </div>
+            <div class="icon">
+                <ul>
+                    <li><i class="fa fa-users">Peoples</i>4 pacengers</li>
+                    <li><i class="fa fa-industry">Mileage</i>10/1</li>
+                    <div>
+                        <li><i class="fa fa-instagram">Fuel Policy</i>Full</li>
+                        <li><i class="fa fa-bullseye">Air ballon</i>6 air Ballon</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="Carprice">
+                <h4>Daily price</h4>
+                <h2>$ 50.00</h2>
+            </div>
+            <button type="button" class="button">Select</button>
+        </div>
+    </div>
+    <div class="carForm">
+        <div class="carImage">
+            <img src="assets/images/alto.png" class="rounded" alt="...">
+        </div>
+        <div class="carDetails">
+            <div class="name">
+                <h3>Alto</h3>
+
+            </div>
+            <div class="icon">
+                <ul>
+                    <li><i class="fa fa-users">Peoples</i>4 pacengers</li>
+                    <li><i class="fa fa-industry">Mileage</i>10/1</li>
+                    <div>
+                        <li><i class="fa fa-instagram">Fuel Policy</i>Full</li>
+                        <li><i class="fa fa-bullseye">Air ballon</i>6 air Ballon</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="Carprice">
+                <h4>Daily price</h4>
+                <h2>$ 30.00</h2>
+            </div>
+            <button type="button" class="button">Select</button>
+        </div>
+    </div>
+    <div class="carForm">
+        <div class="carImage">
+            <img src="assets/images/hybrid.png" class="rounded" alt="...">
+        </div>
+        <div class="carDetails">
+            <div class="name">
+                <h3>Hybrid</h3>
+
+            </div>
+            <div class="icon">
+                <ul>
+                    <li><i class="fa fa-users">Peoples</i>4 pacengers</li>
+                    <li><i class="fa fa-industry">Mileage</i>10/1</li>
+                    <div>
+                        <li><i class="fa fa-instagram">Fuel Policy</i>Full</li>
+                        <li><i class="fa fa-bullseye">Air ballon</i>6 air Ballon</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="Carprice">
+                <h4>Daily price</h4>
+                <h2>$ 80.00</h2>
+            </div>
+            <button type="button" class="button">Select</button>
+        </div>
+    </div>
+
+</section>
+<!--    customer save-->
+<!--
+<section class=" container-fluid mt-3" id="customerContext">
+
+    <div class="row mt-3">
+        <div class="col-4">
+            <form id="customerForme">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label class="form-label" for="cusID">Customer ID</label>
+                        <input class="form-control" id="cusID" name="cId" placeholder="Customer ID" type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="cusName">Customer Name</label>
+                        <input class="form-control" id="cusName" name="cname" placeholder="Customer Name"
+                               type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="cusAddress">Customer Address</label>
+                        <input class="form-control" id="cusAddress" name="caddress" placeholder="Customer Address"
+                               type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="cuscity">City</label>
+                        <input class="form-control" id="cusCity" name="city" placeholder="Customer Address"
+                               type="text">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label class="form-label" for="cusAddress">House No</label>
+                        <input class="form-control" id="cusHouseNo" name="houseNo" placeholder="House No"
+                               type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="cusLicen">Driving Licen</label>
+                        <input class="form-control" id="cusLicen" name="licen" placeholder="Customer Licen"
+                               type="text">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label" for="cusTel">Teliphone No.</label>
+                        <input class="form-control" id="cusTel" name="Tnumber" placeholder="Teliphone"
+                               type="text">
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
+                    <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
+                    <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
+                    <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>House No</th>
+                    <th>Driving Licen</th>
+                    <th>Teliphone No</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomerJson">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <img src="assets/images/customer.png" class=" image img-fluid " alt="...">
+</section>
+-->
+<!--Order Form-->
+<section class=" orderForm image1 container-fluid mt-3" id="orderContext">
+    <nav class="navbar bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand">Navbar</a>
+        </div>
+    </nav>
+    <!--    Rent save-->
+    <div class="row mt-3">
+        <div class="col-4">
+            <div class="customerborder">
+                <form id="customerForme">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label class="form-label" for="cusID">Customer ID</label>
+                            <input class="form-control" id="cusID" name="cId" placeholder="Customer ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="cusName">Customer Name</label>
+                            <input class="form-control" id="cusName" name="cname" placeholder="Customer Name"
+                                   type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="cusAddress">Customer Address</label>
+                            <input class="form-control" id="cusAddress" name="caddress" placeholder="Customer Address"
+                                   type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="cuscity">City</label>
+                            <input class="form-control" id="cusCity" name="city" placeholder="Customer Address"
+                                   type="text">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <label class="form-label" for="cusAddress">House No</label>
+                            <input class="form-control" id="cusHouseNo" name="houseNo" placeholder="House No"
+                                   type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="cusLicen">Driving Licen</label>
+                            <input class="form-control" id="cusLicen" name="licen" placeholder="Customer Licen"
+                                   type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="cusTel">Teliphone No.</label>
+                            <input class="form-control" id="cusTel" name="Tnumber" placeholder="Teliphone"
+                                   type="text">
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
+                        <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
+                        <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
+                        <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <form id="orderForm">
+                <div class="borde">
+                    <div class="row fw-bold">
+                        <div class="col-lg-6">
+                            <label class="form-label" for="rId">Reservation ID</label>
+                            <input class="form-control" id="rId" name="rid" placeholder="Reservation ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="rcId">Customer ID</label>
+                            <input class="form-control" id="rcId" name="rid" placeholder="Reservation Cus ID"
+                                   type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="rdId">Driver ID</label>
+                            <input class="form-control" id="rdId" name="dId" placeholder="Driver ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="plateId">Driver ID</label>
+                            <input class="form-control" id="plateId" name="plateId" placeholder="Plate ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="pDate">pickup Date</label>
+                            <input class="form-control" id="pDate" name="pdate" placeholder="Pickup ID" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="plocation">pickup Location</label>
+                            <input class="form-control" id="plocation" name="plocation" placeholder="Pickup Location"
+                                   type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="noofdays">No Of Days</label>
+                            <input class="form-control" id="noofdays" name="days" placeholder="No of Days" type="text">
+                        </div>
+                    </div>
+                    <div class=" cardborder mt-lg-5">
+                        <div class="col-lg-6">
+                            <label class="form-label" for="holdername">Cardholder' s Name</label>
+                            <input class="form-control" id="holdername" name="hname" placeholder="" type="text">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="form-label" for="cnumber">Card Number</label>
+                            <input class="form-control" id="cnumber" name="cnumber" placeholder="" type="text">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="form-label" for="expDate">Expiration Date</label>
+                                <input class="form-control" id="expDate" name="expDate" placeholder="MM/YY" type="text">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form-label" for="cvc">CVC</label>
+                                <input class="form-control" id="cvc" name="cvc" placeholder="" type="text">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <button class=" button btn btn-success" id="btnSaveOrder" type="button">Book Now</button>
+                        <button class=" button btn btn-primary " id="btnGetAllOrders" type="button">Get All</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--
+                <div class="col">
+                    <table class="table table-bordered table-hover">
+                        <thead class="bg-danger text-white">
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Customer Name</th>
+                            <th>Customer Address</th>
+                            <th>House No</th>
+                            <th>Driving Licen</th>
+                            <th>Teliphone No</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblCustomerJson">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+        -->
+    </div>
+</section>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script>
+
+    $("#header").css("display", "block");
+    $("#vehicleSelectContext").css("display", "none");
+    $("#customerContext").css("display", "none");
+    $("#orderContext").css("display", "none");
+
+    $("#LinkVehicle").click(function () {
+        $("#vehicleSelectContext").css("display", "block");
+        $("#header").css("display", "none");
+        $("#orderContext").css("display", "none");
+    });
+
+    $(".button").click(function () {
+        $("#orderContext").css("display", "block");
+        $("#header").css("display", "none");
+        $("#vehicleSelectContext").css("display", "none");
+    });
+    $("#btnSaveCustomer").click(function () {
+        $("#orderContext").css("display", "block");
+        $("#vehicleSelectContext").css("display", "none");
+        $("#header").css("display", "none");
+        $("#customerContext").css("display", "none");
+    });
+
+    const basecustomer = "http://localhost:8080/SpringCourceWork_war_exploded/customer";
+    const baseOrder = "http://localhost:8080/SpringCourceWork_war_exploded/reservation";
+
+
+    $("#btnSaveCustomer").click(function () {
+        saveCustomer();
+    });
+    $("#btnSaveOrder").click(function () {
+        saveOrder();
+    });
+
+    function saveCustomer() {
+        var data = $("#customerForme").serialize(); // return query string of form with name:type-value
+        $.ajax({
+            url: basecustomer,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Successfully Customer Registered");
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function saveOrder() {
+        var data = $("#orderForm").serialize(); // return query string of form with name:type-value
+        $.ajax({
+            url: baseOrder,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Successfully Customer Registered");
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
 
 </script>
 
