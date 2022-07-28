@@ -355,11 +355,22 @@
         height: 256px;
         border: 2px solid #baa4a4;
     }
-
-    .customerborder {
-
+    .cborder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 500px;
+        margin: auto;
+        border: 2px solid #6c757d;
+        width: 500px;
+        border-radius: 20px;
     }
-
+    .text{
+        position: relative;
+        left:50px;
+    }
     .HomeImage {
         position: absolute;
     }
@@ -436,6 +447,7 @@ dash Board Form
     </div>
 </section>
 <!--Vehicle Form-->
+
 <section id="vehicleSelectContext">
     <img class="topImage" src="assets/images/sCarGroup.png" alt="...">
 
@@ -625,13 +637,14 @@ dash Board Form
 </section>
 -->
 <!--Order Form-->
+<!--
 <section class=" orderForm image1 container-fluid mt-3" id="orderContext">
     <nav class="navbar bg-danger">
         <div class="container-fluid">
             <a class="navbar-brand">Navbar</a>
         </div>
     </nav>
-    <!--    Rent save-->
+    &lt;!&ndash;    Rent save&ndash;&gt;
     <div class="row mt-3">
         <div class="col-4">
             <div class="customerborder">
@@ -745,7 +758,7 @@ dash Board Form
                 </div>
             </form>
         </div>
-        <!--
+        &lt;!&ndash;
                 <div class="col">
                     <table class="table table-bordered table-hover">
                         <thead class="bg-danger text-white">
@@ -771,9 +784,59 @@ dash Board Form
                         </tbody>
                     </table>
                 </div>
-        -->
+        &ndash;&gt;
     </div>
 </section>
+-->
+<section id="registerCustomerContext">
+    <section class="container-fluid p-2 bg-black text-white">
+        <h1 class="fw-bold">Customer</h1>
+    </section>
+    <form id="customerForme">
+        <div class="cborder">
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="cusID">Customer ID</label>
+                <input class="form-control" id="cusID" name="cId" placeholder="Customer ID" type="text">
+            </div>
+            <div class="text  col-lg-9 ">
+                <label class="form-label" for="cusName">Customer Name</label>
+                <input class="form-control" id="cusName" name="cname"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="cusAddress">Customer Address</label>
+                <input class="form-control" id="cusAddress" name="caddress"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="cuscity">City</label>
+                <input class="form-control" id="cusCity" name="city"
+                       type="text">
+            </div>
+
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="cusAddress">House No</label>
+                <input class="form-control" id="cusHouseNo" name="houseNo"
+                       type="text">
+            </div>
+            <div class="text col-lg-9 ">
+                <label class="form-label" for="cusLicen">Driving Licen</label>
+                <input class="form-control" id="cusLicen" name="DrivingLicence"
+                       type="text">
+            </div>
+            <div class="text col-lg-9">
+                <label class="form-label" for="cusTel">Teliphone No.</label>
+                <input class="form-control" id="cusTel" name="Tnumber"
+                       type="text">
+            </div>
+            <div class="mt-5">
+                <button class="btn btn-primary col-lg-12" id="btnSaveCustomer" type="button">Register Customer</button>
+            </div>
+        </div>
+    </form>
+
+</section>
+
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -784,21 +847,21 @@ dash Board Form
     $("#header").css("display", "block");
     $("#vehicleSelectContext").css("display", "none");
     $("#customerContext").css("display", "none");
-    $("#orderContext").css("display", "none");
+    $("#registerCustomerContext").css("display", "none");
 
     $("#LinkVehicle").click(function () {
         $("#vehicleSelectContext").css("display", "block");
         $("#header").css("display", "none");
-        $("#orderContext").css("display", "none");
+        $("#registerCustomerContext").css("display", "none");
     });
 
     $(".button").click(function () {
-        $("#orderContext").css("display", "block");
+        $("#registerCustomerContext").css("display", "block");
         $("#header").css("display", "none");
         $("#vehicleSelectContext").css("display", "none");
     });
     $("#btnSaveCustomer").click(function () {
-        $("#orderContext").css("display", "block");
+        $("#registerCustomerContext").css("display", "block");
         $("#vehicleSelectContext").css("display", "none");
         $("#header").css("display", "none");
         $("#customerContext").css("display", "none");
