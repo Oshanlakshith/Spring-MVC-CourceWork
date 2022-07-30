@@ -11,6 +11,14 @@
           href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/nomerlize" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="assets/styles/location.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9tohKIZmhMu8S0fEcCMM-RrUsF7vDsGU=places"></script>
+    <script src="assets/js/location.js"></script>
+    <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -355,6 +363,29 @@
         height: 256px;
         border: 2px solid #baa4a4;
     }
+
+    #sideImage {
+        background-image: url(assets/images/sideimage.png);
+        width: 200px;
+        height: 95px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #leftsideImage {
+        background-image: url(assets/images/sideimage.png);
+        width: 200px;
+        height: 95px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
     .cborder {
         position: absolute;
         top: 0;
@@ -367,13 +398,16 @@
         width: 500px;
         border-radius: 20px;
     }
-    .text{
+
+    .text {
         position: relative;
-        left:50px;
+        left: 50px;
     }
+
     .HomeImage {
         position: absolute;
     }
+
 </style>
 
 <body>
@@ -448,6 +482,7 @@ dash Board Form
 </section>
 <!--Vehicle Form-->
 
+<!--
 <section id="vehicleSelectContext">
     <img class="topImage" src="assets/images/sCarGroup.png" alt="...">
 
@@ -555,6 +590,7 @@ dash Board Form
     </div>
 
 </section>
+-->
 <!--    customer save-->
 <!--
 <section class=" container-fluid mt-3" id="customerContext">
@@ -792,6 +828,7 @@ dash Board Form
     <section class="container-fluid p-2 bg-black text-white">
         <h1 class="fw-bold">Customer</h1>
     </section>
+    <div id="leftsideImage"></div>
     <form id="customerForme">
         <div class="cborder">
             <div class=" text col-lg-9 ">
@@ -834,9 +871,54 @@ dash Board Form
             </div>
         </div>
     </form>
+    <div id="sideImage"></div>
+</section>
+<section id="selectLocationContext">
+    <section>
+        <section class="container-fluid p-2 bg-black text-white">
+            <h1 class="fw-bold">Pickup Location</h1>
+        </section>
+        <div id="pesan">
+            <div class="inner">
+                <h1 id="title">Pesan Go-Back</h1>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="from" class="col-xs-2 control-label"><i class="far fa-dot-circle"></i></label>
+                        <div class="col-xs-4">
+                            <input type="text" id="from" placeholder="Origin" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="to" class="col-xs-2 control-label"><i class="fas fa-map-marker-alt"></i></label>
+                        <div class="col-xs-4">
+                            <input type="text" id="to" placeholder="Destination" class="form-control">
+                        </div>
+
+                    </div>
+
+                </form>
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button class="btn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
+                </div>
+                <div class="container-fluid">
+                    <div id="googleMap">
+
+                    </div>
+                    <div id="output">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=[Enter your Api]=places"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="assets/js/location.js"></script>
+    </section>
 
 </section>
-
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -845,24 +927,18 @@ dash Board Form
 <script>
 
     $("#header").css("display", "block");
-    $("#vehicleSelectContext").css("display", "none");
+    $("#selectLocationContext").css("display", "none");
     $("#customerContext").css("display", "none");
     $("#registerCustomerContext").css("display", "none");
 
     $("#LinkVehicle").click(function () {
-        $("#vehicleSelectContext").css("display", "block");
-        $("#header").css("display", "none");
-        $("#registerCustomerContext").css("display", "none");
-    });
-
-    $(".button").click(function () {
         $("#registerCustomerContext").css("display", "block");
         $("#header").css("display", "none");
-        $("#vehicleSelectContext").css("display", "none");
+        $("#selectLocationContext").css("display", "none");
     });
     $("#btnSaveCustomer").click(function () {
-        $("#registerCustomerContext").css("display", "block");
-        $("#vehicleSelectContext").css("display", "none");
+        $("#selectLocationContext").css("display", "block");
+        $("#registerCustomerContext").css("display", "none");
         $("#header").css("display", "none");
         $("#customerContext").css("display", "none");
     });
@@ -877,6 +953,12 @@ dash Board Form
     $("#btnSaveOrder").click(function () {
         saveOrder();
     });
+    $("#from").click(function () {
+        $("#title").text("Where can we pick you up?");
+    });
+    $("#to").click(function () {
+        $("#title").text("Where to?");
+    });
 
     function saveCustomer() {
         var data = $("#customerForme").serialize(); // return query string of form with name:type-value
@@ -886,6 +968,11 @@ dash Board Form
             data: data,
             success: function (res) {
                 if (res.code == 200) {
+                    var valert = confirm("Successfully Customer Registered");
+                    if (valert == true) {
+
+                    }
+                } else {
                     alert("Successfully Customer Registered");
                 }
             },
@@ -911,7 +998,6 @@ dash Board Form
             }
         });
     }
-
 </script>
 
 </body>
