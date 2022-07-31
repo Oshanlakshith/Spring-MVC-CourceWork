@@ -1,3 +1,4 @@
+<html>
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -308,10 +309,6 @@
         color: green;
     }
 
-    #LinkVehicle {
-        background-color: green;
-    }
-
     button.button {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: green;
@@ -328,40 +325,6 @@
         right: 739px;
         margin: auto;
         /* top: 1px; */
-    }
-
-    .name {
-        bottom: 435px;
-        position: relative;
-    }
-
-    .image {
-        position: relative;
-        left: 300px;
-        width: 600px;
-        right: 0;
-        margin: auto;
-    }
-
-    .borde {
-        width: 800px;
-        border-radius: 20px;
-        height: 311px;
-        border: 2px solid #7d6c6c;
-    }
-
-    .button {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    }
-
-    .cardborder {
-        width: 785px;
-        border-radius: 20px;
-        position: relative;
-        left: 1px;
-        height: 256px;
-        border: 2px solid #baa4a4;
     }
 
     #sideImage {
@@ -408,6 +371,55 @@
         position: absolute;
     }
 
+    #selectVehicleContext {
+        position: relative;
+        right: 24px;
+        width: 396px;
+    }
+
+
+    #selectVehicleContext div {
+        position: relative;
+        top: 20px;
+        width: 390px;
+        border: 2px solid #6c757d;
+        background-color: white;
+        border-radius: 20px;
+        height: 19vh;
+        display: flex;
+    }
+    .vdetails {
+        width: 191px;
+        height: 133px;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        z-index: 2;
+    }
+    #selectVehicleContext div:nth-child(1) {
+
+    }
+
+    #selectVehicleContext div:nth-child(2) {
+
+    }
+
+    #selectVehicleContext div:nth-child(3) {
+    }
+
+    .imageForm {
+        width: 195px;
+        border-radius: 20px;
+        background-color: red;
+        background-image: url("assets/images/taxi.png");
+        background-size: cover;
+        background-position: center;
+        z-index: 2;
+    }
+
+    .imageForm .cimage {
+
+    }
 </style>
 
 <body>
@@ -444,10 +456,6 @@ dash Board Form
                 </div>
                 <button id="LinkVehicle" class="discover-btn">
                     <a href="#">Loging</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
-                </button>
-                <button class="discover-btn">
-                    <a href="#">Admin Form</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
-
                 </button>
 
             </div>
@@ -899,8 +907,10 @@ dash Board Form
 
                 </form>
                 <div class="col-xs-offset-2 col-xs-10">
-                    <button class="btn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
+                    <button class="locationbtn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i>
+                    </button>
                 </div>
+
                 <div class="container-fluid">
                     <div id="googleMap">
 
@@ -908,10 +918,53 @@ dash Board Form
                     <div id="output">
 
                     </div>
+                    <section id="selectVehicleContext">
+                        <div>
+                            <section class="imageForm">
+                                <section class="cimage">
+
+                                </section>
+                            </section>
+                            <section class="vdetails">
+                                <h4>LKR 3000</h4>
+                              <p>4 Seats. Comfortable sedans, top-quality drivers</p>
+                                <button class="bg-success rounded-pill fw-bold">Select</button>
+
+                            </section>
+
+                        </div>
+                        <div>
+                            <section class="imageForm">
+                                <section class="cimage">
+
+                                </section>
+                            </section>
+                            <section class="vdetails">
+                                <h4>LKR 1000</h4>
+                                <p>4 Seats. Comfortable sedans, top-quality drivers</p>
+                                <button class="bg-success rounded-pill fw-bold">Select</button>
+
+                            </section>
+                        </div>
+                        <div>
+                            <section class="imageForm">
+                                <section class="cimage">
+
+                                </section>
+                            </section>
+                            <section class="vdetails">
+                                <h4>LKR 7000</h4>
+                                <p>4 Seats. Comfortable sedans, top-quality drivers</p>
+                            <button class="bg-success rounded-pill fw-bold">Select</button>
+                            </section>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
-        <div id="map"></div>
+        <div id="map">
+
+        </div>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=[Enter your Api]=places"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -930,17 +983,25 @@ dash Board Form
     $("#selectLocationContext").css("display", "none");
     $("#customerContext").css("display", "none");
     $("#registerCustomerContext").css("display", "none");
+    $("#selectVehicleContext").css("display", "none");
 
     $("#LinkVehicle").click(function () {
         $("#registerCustomerContext").css("display", "block");
         $("#header").css("display", "none");
         $("#selectLocationContext").css("display", "none");
+        $("#selectVehicleContext").css("display", "none");
+
     });
     $("#btnSaveCustomer").click(function () {
         $("#selectLocationContext").css("display", "block");
         $("#registerCustomerContext").css("display", "none");
         $("#header").css("display", "none");
         $("#customerContext").css("display", "none");
+        $("#selectVehicleContext").css("display", "none");
+    });
+    $(".locationbtn").click(function () {
+        $("#selectVehicleContext").css("display", "block");
+        $("#selectLocationContext").css("display", "block");
     });
 
     const basecustomer = "http://localhost:8080/SpringCourceWork_war_exploded/customer";
@@ -1001,3 +1062,4 @@ dash Board Form
 </script>
 
 </body>
+</html>
