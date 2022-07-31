@@ -247,11 +247,6 @@
         height: 43vh;
         width: 0;
     }
-
-    .carDetails {
-        background-color: #3c5168;
-    }
-
     .carForm .carDetails h3 {
         position: absolute;
         color: #992f2f;
@@ -299,14 +294,6 @@
         left: 388px;
         top: 0;
         margin: auto;
-    }
-
-    .Carprice {
-        position: absolute;
-        right: 0;
-        left: 13px;
-        margin: auto;
-        color: green;
     }
 
     button.button {
@@ -388,6 +375,7 @@
         height: 19vh;
         display: flex;
     }
+
     .vdetails {
         width: 191px;
         height: 133px;
@@ -396,17 +384,6 @@
         background-position: center;
         z-index: 2;
     }
-    #selectVehicleContext div:nth-child(1) {
-
-    }
-
-    #selectVehicleContext div:nth-child(2) {
-
-    }
-
-    #selectVehicleContext div:nth-child(3) {
-    }
-
     .imageForm {
         width: 195px;
         border-radius: 20px;
@@ -417,8 +394,39 @@
         z-index: 2;
     }
 
-    .imageForm .cimage {
+    #bookingCarContext {
+        position: absolute;
+        right: 20px;
+        width: 396px;
+        top: 447px;
+        height: 432px;
+        bottom: 0;
+        left: 0;
+    }
 
+    .reserrow {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        background-color: lightgreen;
+        margin-right: -4px;
+        margin-left: -22px;
+    }
+
+    .booking {
+        background-color: green;
+        border-radius: 20px;
+        color: white;
+        width: 26vw;
+        height: 41px;
+    }
+    .cansel {
+        background-color: #992f2f;
+        border-radius: 20px;
+        color: white;
+        width: 26vw;
+        height: 41px;
     }
 </style>
 
@@ -927,8 +935,8 @@ dash Board Form
                             </section>
                             <section class="vdetails">
                                 <h4>LKR 3000</h4>
-                              <p>4 Seats. Comfortable sedans, top-quality drivers</p>
-                                <button class="bg-success rounded-pill fw-bold">Select</button>
+                                <p>4 Seats. Comfortable sedans, top-quality drivers</p>
+                                <button class="btncarSelect bg-success rounded-pill fw-bold">Select</button>
 
                             </section>
 
@@ -942,7 +950,7 @@ dash Board Form
                             <section class="vdetails">
                                 <h4>LKR 1000</h4>
                                 <p>4 Seats. Comfortable sedans, top-quality drivers</p>
-                                <button class="bg-success rounded-pill fw-bold">Select</button>
+                                <button class="btncarSelect bg-success rounded-pill fw-bold">Select</button>
 
                             </section>
                         </div>
@@ -955,18 +963,80 @@ dash Board Form
                             <section class="vdetails">
                                 <h4>LKR 7000</h4>
                                 <p>4 Seats. Comfortable sedans, top-quality drivers</p>
-                            <button class="bg-success rounded-pill fw-bold">Select</button>
+                                <button class="btncarSelect bg-success rounded-pill fw-bold">Select</button>
                             </section>
+                        </div>
+                    </section>
+                    <section id="bookingCarContext">
+                        <div class="reserrow">
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="reservationId">Reservation Id</label>
+                                <input class="form-control" id="reservationId" name="reservationId"
+                                       type="text">
+                            </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="DId">Customer Id</label>
+                                <input class="form-control" id="cId" name="cId"
+                                       type="text">
+                            </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="DId">Driver Id</label>
+                                <input class="form-control" id="DId" name="DId"
+                                       type="text">
+                            </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="palteNo">Plate NO</label>
+                                <input class="form-control" id="palteNo" name="palteNo"
+                                       type="text">
+                            </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="rdate">Reservation Date</label>
+                                <input class="form-control" id="rDate" name="ReservasionDate"
+                                       type="text">
+                            </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="pdate">pickup Date</label>
+                                <input class="form-control" id="pdate" name="pickupdate"
+                                       type="text">
+                            </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="time">Time</label>
+                                <input class="form-control" id="time" name="time"
+                                       type="text">
+                            </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="DId">Pickup Location</label>
+                                <input class="form-control" id="plocation" name="pickupLocation"
+                                       type="text">
+                            </div>
+
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="DId">Your Location</label>
+                                <input class="form-control" id="ylocation" name="yourLocation"
+                                       type="text">
+                            </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="DId">No Of Days</label>
+                                <input class="form-control" id="ndays" name="NoOfDays"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div id="Book">
+                            <button class="booking fw-bold">Booking</button>
+                        </div>
+                        <div id="Cansel">
+                            <button class="cansel fw-bold">Cancel</button>
                         </div>
                     </section>
                 </div>
             </div>
         </div>
+
         <div id="map">
 
         </div>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=[Enter your Api]=places"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=[Enter your API]=places"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="assets/js/location.js"></script>
     </section>
@@ -984,12 +1054,16 @@ dash Board Form
     $("#customerContext").css("display", "none");
     $("#registerCustomerContext").css("display", "none");
     $("#selectVehicleContext").css("display", "none");
+    $("#bookingCarContext").css("display", "none");
+
 
     $("#LinkVehicle").click(function () {
         $("#registerCustomerContext").css("display", "block");
         $("#header").css("display", "none");
         $("#selectLocationContext").css("display", "none");
         $("#selectVehicleContext").css("display", "none");
+        $("#bookingCarContext").css("display", "none");
+
 
     });
     $("#btnSaveCustomer").click(function () {
@@ -998,12 +1072,22 @@ dash Board Form
         $("#header").css("display", "none");
         $("#customerContext").css("display", "none");
         $("#selectVehicleContext").css("display", "none");
+        $("#bookingCarContext").css("display", "none");
+
     });
     $(".locationbtn").click(function () {
         $("#selectVehicleContext").css("display", "block");
         $("#selectLocationContext").css("display", "block");
-    });
+        $("#bookingCarContext").css("display", "none");
 
+    });
+    $(".btncarSelect").click(function () {
+        console.log("Hellow");
+        $("#bookingCarContext").css("display", "block");
+        $("#selectLocationContext").css("display", "block");
+        $("#selectVehicleContext").css("display", "none");
+
+    });
     const basecustomer = "http://localhost:8080/SpringCourceWork_war_exploded/customer";
     const baseOrder = "http://localhost:8080/SpringCourceWork_war_exploded/reservation";
 
