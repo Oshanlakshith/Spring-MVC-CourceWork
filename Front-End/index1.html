@@ -224,13 +224,6 @@
         margin: auto;
 
     }
-
-    .carForm {
-        height: 45vh;
-        width: 100%;
-        border: 2px solid #f3f1ef;
-    }
-
     .carForm .carImage {
         position: absolute;
         left: 71px;
@@ -289,13 +282,6 @@
         opacity: 0.6;
     }
 
-    .topImage {
-        position: relative;
-        left: 388px;
-        top: 0;
-        margin: auto;
-    }
-
     button.button {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: green;
@@ -326,13 +312,13 @@
     }
 
     #leftsideImage {
-        background-image: url(assets/images/sideimage.png);
-        width: 200px;
-        height: 95px;
+        background-image: url(assets/images/orderPagei.png);
+        width: 224px;
+        height: 234px;
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: 3px;
         margin: auto;
     }
 
@@ -1020,6 +1006,11 @@ dash Board Form
                                 <input class="form-control" id="ndays" name="NoOfDays"
                                        type="text">
                             </div>
+                            <div class="text  col-lg-9 ">
+                                <label class="form-label" for="DId">Total Cost</label>
+                                <input class="form-control" id="totalCost" name="TotalCost"
+                                       type="text">
+                            </div>
                         </div>
                         <div id="Book">
                             <button class="booking fw-bold">Booking</button>
@@ -1036,7 +1027,7 @@ dash Board Form
 
         </div>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=[Enter your API]=places"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=[enter your Api]=places"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="assets/js/location.js"></script>
     </section>

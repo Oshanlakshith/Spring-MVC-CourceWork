@@ -20,6 +20,7 @@ public class CustomerController {
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponceUtil saveCustomer(CustomerDTO customerDTO) {
         customerService.saveCustomer(customerDTO);
+        System.out.println(customerDTO);
         return new ResponceUtil(200, "Save Customer", null);
     }
 

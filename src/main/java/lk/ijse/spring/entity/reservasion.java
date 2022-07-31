@@ -27,6 +27,7 @@ public class reservasion {
     private String pickupLocation;
     private String yourLocation;
     private String NoOfDays;
+    private String TotalCost;
 
     @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
     @JoinColumn(name = "customerID",referencedColumnName = "cId",nullable = false)

@@ -2,94 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Car</title>
-    <link href="assets/bootstrap/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css"
-          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>admin</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+<style>
+    .text {
+        position: relative;
+        left: 50px;
+    }
+
+    .cborder {
+        position: absolute;
+        top: 0;
+        left: -548px;
+        right: 0;
+        bottom: 0;
+        height: 500px;
+        margin: auto;
+        border: 2px solid #6c757d;
+        width: 500px;
+        border-radius: 20px;
+    }
+
+    .customerTable {
+        position: relative;
+        left: 763px;
+        top: -283px;
+        margin: auto;
+    }
+</style>
 <body>
-<section class="container-fluid p-4 bg-danger text-white">
-    <h1 class="fw-bold text-center">Car Form</h1>
-</section>
-<section class="container-fluid mt-3">
-    <!--    customer save-->
-    <div class="row mt-3">
-        <div class="col-4">
-            <form id="customerForm">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label class="form-label" for="carId">Car ID</label>
-                        <input class="form-control" id="carId" name="carId" placeholder="Car Id" type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="plateNo">Plate No</label>
-                        <input class="form-control" id="plateNo" name="cplate" placeholder="Car Palte"
-                               type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="dprice">Daily price</label>
-                        <input class="form-control" id="dprice" name="cprice" placeholder="Car price"
-                               type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="miladge">Miladge</label>
-                        <input class="form-control" id="miladge" name="milage" placeholder="Car milage"
-                               type="text">
-                    </div>
+<section>
+    <section id="registerCarContext">
+        <section class="container-fluid p-2 bg-black text-white">
+            <h1 class="fw-bold">Cars...</h1>
+        </section>
+        <img src="assets/images/orderPagei.png">
 
-                    <div class="col-lg-6">
-                        <label class="form-label" for="carqty">carQty</label>
-                        <input class="form-control" id="carqty" name="cqty" placeholder="Car Qty"
-                               type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="model">Model</label>
-                        <input class="form-control" id="model" name="model" placeholder="modely"
-                               type="text">
-                    </div>
-
+        <div id="leftsideImage"></div>
+        <form id="customerForme">
+            <div class="cborder">
+                <div class=" text col-lg-9 ">
+                    <label class="form-label" for="carId">Car ID</label>
+                    <input class="form-control" id="carId" name="carId" type="text">
                 </div>
-                <div class="mt-5">
-                    <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
-                    <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
-                    <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
-                    <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
+                <div class="text  col-lg-9 ">
+                    <label class="form-label" for="plateNo">Plate No</label>
+                    <input class="form-control" id="plateNo" name="plateNo"
+                           type="text">
                 </div>
-            </form>
-        </div>
-        <div class="col">
-            <table class="table table-bordered table-hover">
-                <thead class="bg-danger text-white">
-                <tr>
-                    <th>Car Id</th>
-                    <th>Plate No</th>
-                    <th>Daily Price</th>
-                    <th>Miladge</th>
-                    <th>car Qty</th>
-                    <th>Model</th>
-                </tr>
-                </thead>
-                <tbody id="tblCustomerJson">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                <div class=" text col-lg-9 ">
+                    <label class="form-label" for="dailyprice">Daily Price</label>
+                    <input class="form-control" id="dailyprice" name="DailyPrice"
+                           type="text">
+                </div>
+                <div class=" text col-lg-9 ">
+                    <label class="form-label" for="miladge">Miladge</label>
+                    <input class="form-control" id="miladge" name="miladge"
+                           type="text">
+                </div>
+                <div class="text col-lg-9 ">
+                    <label class="form-label" for="qty">Car Qty</label>
+                    <input class="form-control" id="qty" name="carQty"
+                           type="text">
+                </div>
+                <div class="text col-lg-9">
+                    <label class="form-label" for="carModel">Model</label>
+                    <input class="form-control" id="carModel" name="Model"
+                           type="text">
+                </div>
 
-                </tr>
-                </tbody>
-            </table>
+                <div class="mb-5 m-4 m">
+                    <button class="btn btn-primary" id="btnSaveCar" type="button">Save</button>
+                    <button class="btn btn-warning" id="btnUpdateCar" type="button">Update</button>
+                    <button class="btn btn-danger" id="btnDeleteCar" type="button">Delete</button>
+                    <button class="btn btn-success" id="btnGetAllCar" type="button">Get All</button>
+                </div>
+            </div>
+        </form>
+        <div class="customerTable">
+            <div class="col-6 mt-lg-5 mb-3">
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-danger text-white">
+                    <tr>
+                        <th> ID</th>
+                        <th>Plate</th>
+                        <th>Daily price</th>
+                        <th>Miladge</th>
+                        <th>Car Qty</th>
+                        <th>Model</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblCustomerJson">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    <img src="assets/images/1.png" class="img-fluid" alt="...">
+    </section>
 </section>
+
 </body>
 </html>

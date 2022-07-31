@@ -7,68 +7,114 @@
 
 </head>
 <style>
-    .background {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    button {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .text {
         position: relative;
-        border: none;
-        font-weight: bolder;
-        color: white;
-        width: 400px;
-        height: 100px;
+        left: 50px;
     }
 
-    div:nth-child(1) {
-        position: absolute;
-        top: 169px;
-        left: 0;
-        margin: auto;
-    }
-    div:nth-child(2) {
+    .cborder {
         position: absolute;
         top: 0;
-        right: -136px;
-        left: 1061px;
-        margin: auto;
-    }
-    div:nth-child(3) {
-        position: absolute;
-        top: 0;
-        left: 558px;
+        left: -548px;
         right: 0;
+        bottom: 0;
+        height: 500px;
         margin: auto;
+        border: 2px solid #6c757d;
+        width: 500px;
+        border-radius: 20px;
     }
-    div:nth-child(4) {
 
-    }
-    div:nth-child(5) {
-
-    }
-    section{
-        position: absolute;
-        top: 22px;
+    .customerTable {
+        position: relative;
+        left: 763px;
+        top: -283px;
         margin: auto;
     }
 </style>
 <body>
-<img class="background" src="assets/images/taxi.png">
 <section>
-    <div>
-        <button style="background-color: #3dd5f3">Driver</button>
-    </div>
-    <div>
-        <button style="background-color: #0a58ca">Customer</button>
-    </div>
-    <div>
-        <button style="background-color: #baa4a4">RentCar</button>
-    </div>
-    <div>
-        <button style="background-color:red">Order Car</button>
-    </div>
+    <section id="registerCustomerContext">
+        <section class="container-fluid p-2 bg-black text-white">
+            <h1 class="fw-bold">Drivers...</h1>
+        </section>
+        <img src="assets/images/orderPagei.png">
+
+        <div id="leftsideImage"></div>
+        <form id="customerForme">
+            <div class="cborder">
+                <div class=" text col-lg-9 ">
+                    <label class="form-label" for="DId">Driver ID</label>
+                    <input class="form-control" id="DId" name="DId" type="text">
+                </div>
+                <div class="text  col-lg-9 ">
+                    <label class="form-label" for="dname">Driver Name</label>
+                    <input class="form-control" id="dname" name="dname"
+                           type="text">
+                </div>
+                <div class=" text col-lg-9 ">
+                    <label class="form-label" for="daddress">Driver Address</label>
+                    <input class="form-control" id="daddress" name="daddress"
+                           type="text">
+                </div>
+                <div class=" text col-lg-9 ">
+                    <label class="form-label" for="dsalary">Driver Salary</label>
+                    <input class="form-control" id="dsalary" name="dsalary"
+                           type="text">
+                </div>
+                <div class="text col-lg-9 ">
+                    <label class="form-label" for="dteliphone">Driver Teliphone</label>
+                    <input class="form-control" id="dteliphone" name="dteliphone"
+                           type="text">
+                </div>
+                <div class="text col-lg-9">
+                    <label class="form-label" for="Drivinglicen">Driving Licence</label>
+                    <input class="form-control" id="Drivinglicen" name="Drivinglicen"
+                           type="text">
+                </div>
+                <div class="text col-lg-9">
+                    <label class="form-label" for="joindate">Driver Join Date</label>
+                    <input class="form-control" id="joindate" name="joindate"
+                           type="text">
+                </div>
+                <div class="mb-3 m-3">
+                    <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
+                    <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
+                    <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
+                    <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
+                </div>
+            </div>
+        </form>
+        <div class="customerTable">
+            <div class="col-6 mt-lg-5 mb-3">
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-danger text-white">
+                    <tr>
+                        <th> ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Salary</th>
+                        <th>Teliphone</th>
+                        <th>Licence</th>
+                        <th>Join Date</th>
+
+                    </tr>
+                    </thead>
+                    <tbody id="tblCustomerJson">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 </section>
 
 </body>
