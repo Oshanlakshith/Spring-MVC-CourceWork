@@ -224,6 +224,7 @@
         margin: auto;
 
     }
+
     .carForm .carImage {
         position: absolute;
         left: 71px;
@@ -240,6 +241,7 @@
         height: 43vh;
         width: 0;
     }
+
     .carForm .carDetails h3 {
         position: absolute;
         color: #992f2f;
@@ -370,6 +372,7 @@
         background-position: center;
         z-index: 2;
     }
+
     .imageForm {
         width: 195px;
         border-radius: 20px;
@@ -407,12 +410,77 @@
         width: 26vw;
         height: 41px;
     }
+
     .cansel {
         background-color: #992f2f;
         border-radius: 20px;
         color: white;
         width: 26vw;
         height: 41px;
+    }
+
+    #AdminButton {
+        display: flex;
+        position: absolute;
+        top: 8px;
+        right: 178px;
+        align-items: center;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-top: 50px;
+        padding: 0 25px;
+        background-color: #d43242;
+        border: 3px solid #ffa938;
+        box-shadow: 5px 7px 20px #557d78;
+    }
+
+    section > div > button {
+        border-radius: 20px;
+    }
+
+    .viewPage {
+        height: 76vh;
+    }
+    section > div > button {
+        border-radius: 20px;
+    }
+
+    .text {
+        position: relative;
+        left: 50px;
+    }
+
+    .cborder {
+        position: absolute;
+        top: 113px;
+        left: -548px;
+        right: 0;
+        bottom: 0;
+        height: 500px;
+        margin: auto;
+        border: 2px solid #6c757d;
+        width: 500px;
+        border-radius: 20px;
+    }
+
+    .customerTable {
+        position: relative;
+        left: 763px;
+        top: -283px;
+        margin: auto;
+    }
+    .cusborder {
+        position: absolute;
+        top: 32px;
+        left: 18px;
+        right: 0;
+        bottom: 0;
+        height: 500px;
+        margin: auto;
+        border: 2px solid #6c757d;
+        width: 500px;
+        border-radius: 20px;
     }
 </style>
 
@@ -451,7 +519,9 @@ dash Board Form
                 <button id="LinkVehicle" class="discover-btn">
                     <a href="#">Loging</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
                 </button>
-
+                <button id="AdminButton">
+                    <a href="#">Admin</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                </button>
             </div>
             <div class="right-sec">
                 <div class="my-car">
@@ -482,357 +552,14 @@ dash Board Form
         </div>
     </div>
 </section>
-<!--Vehicle Form-->
 
-<!--
-<section id="vehicleSelectContext">
-    <img class="topImage" src="assets/images/sCarGroup.png" alt="...">
-
-    <div class="carForm">
-        <div class="carImage">
-            <img src="assets/images/rentcar1.png" class="rounded" alt="...">
-        </div>
-        <div class="carDetails">
-            <div>
-                <h3>Honda City</h3>
-            </div>
-            <div class="icon">
-                <ul>
-                    <li><i class="fa fa-users">Peoples</i>4 pacengers</li>
-                    <li><i class="fa fa-industry">Mileage</i>10/1</li>
-                    <div>
-                        <li><i class="fa fa-instagram">Fuel Policy</i>Full</li>
-                        <li><i class="fa fa-bullseye">Air ballon</i>6 air Ballon</li>
-                    </div>
-                </ul>
-            </div>
-            <div class="Carprice">
-                <h4>Daily price</h4>
-                <h2>$ 70.00</h2>
-            </div>
-            <button type="button" class="button">Select</button>
-        </div>
-    </div>
-    <div class="carForm">
-        <div class="carImage">
-            <img src="assets/images/waganr.png" class="rounded" alt="...">
-        </div>
-        <div class="carDetails">
-            <div class="name">
-                <h3>Wagenr</h3>
-            </div>
-            <div class="icon">
-                <ul>
-                    <li><i class="fa fa-users">Peoples</i>4 pacengers</li>
-                    <li><i class="fa fa-industry">Mileage</i>10/1</li>
-                    <div>
-                        <li><i class="fa fa-instagram">Fuel Policy</i>Full</li>
-                        <li><i class="fa fa-bullseye">Air ballon</i>6 air Ballon</li>
-                    </div>
-                </ul>
-            </div>
-            <div class="Carprice">
-                <h4>Daily price</h4>
-                <h2>$ 50.00</h2>
-            </div>
-            <button type="button" class="button">Select</button>
-        </div>
-    </div>
-    <div class="carForm">
-        <div class="carImage">
-            <img src="assets/images/alto.png" class="rounded" alt="...">
-        </div>
-        <div class="carDetails">
-            <div class="name">
-                <h3>Alto</h3>
-
-            </div>
-            <div class="icon">
-                <ul>
-                    <li><i class="fa fa-users">Peoples</i>4 pacengers</li>
-                    <li><i class="fa fa-industry">Mileage</i>10/1</li>
-                    <div>
-                        <li><i class="fa fa-instagram">Fuel Policy</i>Full</li>
-                        <li><i class="fa fa-bullseye">Air ballon</i>6 air Ballon</li>
-                    </div>
-                </ul>
-            </div>
-            <div class="Carprice">
-                <h4>Daily price</h4>
-                <h2>$ 30.00</h2>
-            </div>
-            <button type="button" class="button">Select</button>
-        </div>
-    </div>
-    <div class="carForm">
-        <div class="carImage">
-            <img src="assets/images/hybrid.png" class="rounded" alt="...">
-        </div>
-        <div class="carDetails">
-            <div class="name">
-                <h3>Hybrid</h3>
-
-            </div>
-            <div class="icon">
-                <ul>
-                    <li><i class="fa fa-users">Peoples</i>4 pacengers</li>
-                    <li><i class="fa fa-industry">Mileage</i>10/1</li>
-                    <div>
-                        <li><i class="fa fa-instagram">Fuel Policy</i>Full</li>
-                        <li><i class="fa fa-bullseye">Air ballon</i>6 air Ballon</li>
-                    </div>
-                </ul>
-            </div>
-            <div class="Carprice">
-                <h4>Daily price</h4>
-                <h2>$ 80.00</h2>
-            </div>
-            <button type="button" class="button">Select</button>
-        </div>
-    </div>
-
-</section>
--->
-<!--    customer save-->
-<!--
-<section class=" container-fluid mt-3" id="customerContext">
-
-    <div class="row mt-3">
-        <div class="col-4">
-            <form id="customerForme">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label class="form-label" for="cusID">Customer ID</label>
-                        <input class="form-control" id="cusID" name="cId" placeholder="Customer ID" type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="cusName">Customer Name</label>
-                        <input class="form-control" id="cusName" name="cname" placeholder="Customer Name"
-                               type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="cusAddress">Customer Address</label>
-                        <input class="form-control" id="cusAddress" name="caddress" placeholder="Customer Address"
-                               type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="cuscity">City</label>
-                        <input class="form-control" id="cusCity" name="city" placeholder="Customer Address"
-                               type="text">
-                    </div>
-
-                    <div class="col-lg-6">
-                        <label class="form-label" for="cusAddress">House No</label>
-                        <input class="form-control" id="cusHouseNo" name="houseNo" placeholder="House No"
-                               type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="cusLicen">Driving Licen</label>
-                        <input class="form-control" id="cusLicen" name="licen" placeholder="Customer Licen"
-                               type="text">
-                    </div>
-                    <div class="col-lg-6">
-                        <label class="form-label" for="cusTel">Teliphone No.</label>
-                        <input class="form-control" id="cusTel" name="Tnumber" placeholder="Teliphone"
-                               type="text">
-                    </div>
-                </div>
-                <div class="mt-5">
-                    <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
-                    <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
-                    <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
-                    <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
-                </div>
-            </form>
-        </div>
-        <div class="col">
-            <table class="table table-bordered table-hover">
-                <thead class="bg-danger text-white">
-                <tr>
-                    <th>Customer ID</th>
-                    <th>Customer Name</th>
-                    <th>Customer Address</th>
-                    <th>House No</th>
-                    <th>Driving Licen</th>
-                    <th>Teliphone No</th>
-                </tr>
-                </thead>
-                <tbody id="tblCustomerJson">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <img src="assets/images/customer.png" class=" image img-fluid " alt="...">
-</section>
--->
-<!--Order Form-->
-<!--
-<section class=" orderForm image1 container-fluid mt-3" id="orderContext">
-    <nav class="navbar bg-danger">
-        <div class="container-fluid">
-            <a class="navbar-brand">Navbar</a>
-        </div>
-    </nav>
-    &lt;!&ndash;    Rent save&ndash;&gt;
-    <div class="row mt-3">
-        <div class="col-4">
-            <div class="customerborder">
-                <form id="customerForme">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <label class="form-label" for="cusID">Customer ID</label>
-                            <input class="form-control" id="cusID" name="cId" placeholder="Customer ID" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="cusName">Customer Name</label>
-                            <input class="form-control" id="cusName" name="cname" placeholder="Customer Name"
-                                   type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="cusAddress">Customer Address</label>
-                            <input class="form-control" id="cusAddress" name="caddress" placeholder="Customer Address"
-                                   type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="cuscity">City</label>
-                            <input class="form-control" id="cusCity" name="city" placeholder="Customer Address"
-                                   type="text">
-                        </div>
-
-                        <div class="col-lg-6">
-                            <label class="form-label" for="cusAddress">House No</label>
-                            <input class="form-control" id="cusHouseNo" name="houseNo" placeholder="House No"
-                                   type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="cusLicen">Driving Licen</label>
-                            <input class="form-control" id="cusLicen" name="licen" placeholder="Customer Licen"
-                                   type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="cusTel">Teliphone No.</label>
-                            <input class="form-control" id="cusTel" name="Tnumber" placeholder="Teliphone"
-                                   type="text">
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
-                        <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
-                        <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
-                        <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
-                    </div>
-                </form>
-
-            </div>
-
-            <form id="orderForm">
-                <div class="borde">
-                    <div class="row fw-bold">
-                        <div class="col-lg-6">
-                            <label class="form-label" for="rId">Reservation ID</label>
-                            <input class="form-control" id="rId" name="rid" placeholder="Reservation ID" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="rcId">Customer ID</label>
-                            <input class="form-control" id="rcId" name="rid" placeholder="Reservation Cus ID"
-                                   type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="rdId">Driver ID</label>
-                            <input class="form-control" id="rdId" name="dId" placeholder="Driver ID" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="plateId">Driver ID</label>
-                            <input class="form-control" id="plateId" name="plateId" placeholder="Plate ID" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="pDate">pickup Date</label>
-                            <input class="form-control" id="pDate" name="pdate" placeholder="Pickup ID" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="plocation">pickup Location</label>
-                            <input class="form-control" id="plocation" name="plocation" placeholder="Pickup Location"
-                                   type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="noofdays">No Of Days</label>
-                            <input class="form-control" id="noofdays" name="days" placeholder="No of Days" type="text">
-                        </div>
-                    </div>
-                    <div class=" cardborder mt-lg-5">
-                        <div class="col-lg-6">
-                            <label class="form-label" for="holdername">Cardholder' s Name</label>
-                            <input class="form-control" id="holdername" name="hname" placeholder="" type="text">
-                        </div>
-                        <div class="col-lg-6">
-                            <label class="form-label" for="cnumber">Card Number</label>
-                            <input class="form-control" id="cnumber" name="cnumber" placeholder="" type="text">
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <label class="form-label" for="expDate">Expiration Date</label>
-                                <input class="form-control" id="expDate" name="expDate" placeholder="MM/YY" type="text">
-                            </div>
-                            <div class="col-lg-6">
-                                <label class="form-label" for="cvc">CVC</label>
-                                <input class="form-control" id="cvc" name="cvc" placeholder="" type="text">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div>
-                        <button class=" button btn btn-success" id="btnSaveOrder" type="button">Book Now</button>
-                        <button class=" button btn btn-primary " id="btnGetAllOrders" type="button">Get All</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        &lt;!&ndash;
-                <div class="col">
-                    <table class="table table-bordered table-hover">
-                        <thead class="bg-danger text-white">
-                        <tr>
-                            <th>Customer ID</th>
-                            <th>Customer Name</th>
-                            <th>Customer Address</th>
-                            <th>House No</th>
-                            <th>Driving Licen</th>
-                            <th>Teliphone No</th>
-                        </tr>
-                        </thead>
-                        <tbody id="tblCustomerJson">
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-        &ndash;&gt;
-    </div>
-</section>
--->
 <section id="registerCustomerContext">
     <section class="container-fluid p-2 bg-black text-white">
         <h1 class="fw-bold">Customer</h1>
     </section>
     <div id="leftsideImage"></div>
-    <form id="customerForme">
-        <div class="cborder">
+    <form class="customerForme">
+        <div class="cusborder">
             <div class=" text col-lg-9 ">
                 <label class="form-label" for="cusID">Customer ID</label>
                 <input class="form-control" id="cusID" name="cId" placeholder="Customer ID" type="text">
@@ -1031,8 +758,245 @@ dash Board Form
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="assets/js/location.js"></script>
     </section>
-
 </section>
+<section class="AdminForm">
+    <section class="container-fluid p-2 bg-danger text-white">
+        <h1 class="fw-bold">Admin Form...</h1>
+    </section>
+    <section>
+        <div class="adminButtons container-fluid p-2 bg-black text-white btn-lg">
+            <button class="BookingBtn">Booking Form</button>
+            <button class="Driverbtn">Drivers</button>
+            <button class="Carbtn">Cars</button>
+            <button class="Customerbtn">Customers</button>
+        </div>
+    </section>
+</section>
+<section id="registerDriverContext">
+    <img src="assets/images/orderPagei.png">
+
+    <div class="leftsideImage"></div>
+    <form id="driverForm">
+        <div class="cborder">
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="DId">Driver ID</label>
+                <input class="form-control" name="DId" type="text">
+            </div>
+            <div class="text  col-lg-9 ">
+                <label class="form-label" for="dname">Driver Name</label>
+                <input class="form-control" id="dname" name="dname"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="daddress">Driver Address</label>
+                <input class="form-control" id="daddress" name="daddress"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="dsalary">Driver Salary</label>
+                <input class="form-control" id="dsalary" name="dsalary"
+                       type="text">
+            </div>
+            <div class="text col-lg-9 ">
+                <label class="form-label" for="dteliphone">Driver Teliphone</label>
+                <input class="form-control" id="dteliphone" name="dteliphone"
+                       type="text">
+            </div>
+            <div class="text col-lg-9">
+                <label class="form-label" for="Drivinglicen">Driving Licence</label>
+                <input class="form-control" id="Drivinglicen" name="Drivinglicen"
+                       type="text">
+            </div>
+            <div class="text col-lg-9">
+                <label class="form-label" for="joindate">Driver Join Date</label>
+                <input class="form-control" id="joindate" name="joindate"
+                       type="text">
+            </div>
+            <div class="mb-3 m-3">
+                <button class="btn btn-primary" id="btnSaveDriver" type="button">Save</button>
+                <button class="btn btn-warning" id="btnUpdateDriver" type="button">Update</button>
+                <button class="btn btn-danger" id="btnDeleteDriver" type="button">Delete</button>
+                <button class="btn btn-success" id="btnGetAllDriver" type="button">Get All</button>
+            </div>
+        </div>
+    </form>
+    <div class="customerTable">
+        <div class="col-6 mt-lg-5 mb-3">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th> ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Salary</th>
+                    <th>Teliphone</th>
+                    <th>Licence</th>
+                    <th>Join Date</th>
+
+                </tr>
+                </thead>
+                <tbody id="tblCustomerJson">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<section id="registerCarContext">
+    <img src="assets/images/orderPagei.png">
+
+    <form id="carForme">
+        <div class="cborder">
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="carId">Car ID</label>
+                <input class="form-control" id="carId" name="carId" type="text">
+            </div>
+            <div class="text  col-lg-9 ">
+                <label class="form-label" for="plateNo">Plate No</label>
+                <input class="form-control" id="plateNo" name="plateNo"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="dailyprice">Daily Price</label>
+                <input class="form-control" id="dailyprice" name="DailyPrice"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="miladge">Miladge</label>
+                <input class="form-control" id="miladge" name="miladge"
+                       type="text">
+            </div>
+            <div class="text col-lg-9 ">
+                <label class="form-label" for="qty">Car Qty</label>
+                <input class="form-control" id="qty" name="carQty"
+                       type="text">
+            </div>
+            <div class="text col-lg-9">
+                <label class="form-label" for="carModel">Model</label>
+                <input class="form-control" id="carModel" name="Model"
+                       type="text">
+            </div>
+
+            <div class="mb-5 m-4 m">
+                <button class="btn btn-primary" id="btnSaveCar" type="button">Save</button>
+                <button class="btn btn-warning" id="btnUpdateCar" type="button">Update</button>
+                <button class="btn btn-danger" id="btnDeleteCar" type="button">Delete</button>
+                <button class="btn btn-success" id="btnGetAllCar" type="button">Get All</button>
+            </div>
+        </div>
+    </form>
+    <div class="customerTable">
+        <div class="col-6 mt-lg-5 mb-3">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th> ID</th>
+                    <th>Plate</th>
+                    <th>Daily price</th>
+                    <th>Miladge</th>
+                    <th>Car Qty</th>
+                    <th>Model</th>
+                </tr>
+                </thead>
+                <tbody id="tblCarJson">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<section id="registerCustomer">
+    <img src="assets/images/orderPagei.png">
+
+    <form class="customerForme">
+        <div class="cborder">
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="cusID">Customer ID</label>
+                <input class="form-control" id="custID" name="cId" placeholder="Customer ID" type="text">
+            </div>
+            <div class="text  col-lg-9 ">
+                <label class="form-label" for="cusName">Customer Name</label>
+                <input class="form-control" id="custName" name="cname"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="cusAddress">Customer Address</label>
+                <input class="form-control" id="custAddress" name="caddress"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="cuscity">City</label>
+                <input class="form-control" id="custCity" name="city"
+                       type="text">
+            </div>
+
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="cusAddress">House No</label>
+                <input class="form-control" id="custHouseNo" name="houseNo"
+                       type="text">
+            </div>
+            <div class="text col-lg-9 ">
+                <label class="form-label" for="cusLicen">Driving Licen</label>
+                <input class="form-control" id="custLicen" name="DrivingLicence"
+                       type="text">
+            </div>
+            <div class="text col-lg-9">
+                <label class="form-label" for="cusTel">Teliphone No.</label>
+                <input class="form-control" id="custTel" name="Tnumber"
+                       type="text">
+            </div>
+            <div class="mb-3 m-3">
+                <button class="btn btn-primary" id="btnSaveCustomerr" type="button">Save</button>
+                <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
+                <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
+                <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
+            </div>
+        </div>
+    </form>
+    <div class="customerTable">
+        <div class="col-6 mt-lg-5 mb-3">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>DrivingLicence</th>
+                    <th>city</th>
+                    <th>HouseNo</th>
+                    <th>Tnumber</th>
+
+                </tr>
+                </thead>
+                <tbody id="tablecustomer">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -1046,6 +1010,12 @@ dash Board Form
     $("#registerCustomerContext").css("display", "none");
     $("#selectVehicleContext").css("display", "none");
     $("#bookingCarContext").css("display", "none");
+    $(".AdminForm").css("display", "none");
+    $(".DriverContext").css("display", "none");
+    $("#registerCarContext").css("display", "none");
+    $("#registerDriverContext").css("display", "none");
+    $("#registerCustomer").css("display", "none");
+
 
 
     $("#LinkVehicle").click(function () {
@@ -1054,6 +1024,11 @@ dash Board Form
         $("#selectLocationContext").css("display", "none");
         $("#selectVehicleContext").css("display", "none");
         $("#bookingCarContext").css("display", "none");
+        $(".AdminForm").css("display", "none");
+        $("#registerCarContext").css("display", "none");
+        $("#registerCustomer").css("display", "none");
+        $("#registerDriverContext").css("display", "none");
+
 
 
     });
@@ -1064,20 +1039,87 @@ dash Board Form
         $("#customerContext").css("display", "none");
         $("#selectVehicleContext").css("display", "none");
         $("#bookingCarContext").css("display", "none");
+        $(".AdminForm").css("display", "none");
+        $("#registerCarContext").css("display", "none");
+        $("#registerDriverContext").css("display", "none");
+        $("#registerCustomer").css("display", "none");
+
 
     });
+
     $(".locationbtn").click(function () {
         $("#selectVehicleContext").css("display", "block");
         $("#selectLocationContext").css("display", "block");
         $("#bookingCarContext").css("display", "none");
+        $(".AdminForm").css("display", "none");
+        $("#registerCarContext").css("display", "none");
+        $("#registerDriverContext").css("display", "none");
+        $("#registerCustomer").css("display", "none");
+
 
     });
     $(".btncarSelect").click(function () {
-        console.log("Hellow");
         $("#bookingCarContext").css("display", "block");
         $("#selectLocationContext").css("display", "block");
         $("#selectVehicleContext").css("display", "none");
+        $(".AdminForm").css("display", "none");
+        $("#registerCarContext").css("display", "none");
+        $("#registerDriverContext").css("display", "none");
+        $("#registerCustomer").css("display", "none");
 
+    });
+
+    $("#AdminButton").click(function () {
+        $(".AdminForm").css("display", "block");
+        $("#header").css("display", "none");
+        $("#selectLocationContext").css("display", "none");
+        $("#registerCustomer").css("display", "none");
+        $("#customerContext").css("display", "none");
+        $("#registerCustomerContext").css("display", "none");
+        $("#selectVehicleContext").css("display", "none");
+        $("#bookingCarContext").css("display", "none");
+        $("#ADriverContext").css("display", "none");
+        $("#registerCarContext").css("display", "none");
+        $("#registerDriverContext").css("display", "none");
+
+    });
+
+    $(".Driverbtn").click(function () {
+        $("#registerDriverContext").css("display", "block");
+        $(".AdminForm").css("display", "block");
+        $("#header").css("display", "none");
+        $("#selectLocationContext").css("display", "none");
+        $("#customerContext").css("display", "none");
+        $("#registerCustomer").css("display", "none");
+        $("#registerCustomerContext").css("display", "none");
+        $("#selectVehicleContext").css("display", "none");
+        $("#bookingCarContext").css("display", "none");
+        $("#ADriverContext").css("display", "none");
+    });
+
+    $(".Carbtn").click(function () {
+        $("#registerCarContext").css("display", "block");
+        $(".AdminForm").css("display", "block");
+        $("#bookingCarContext").css("display", "none");
+        $("#registerDriverContext").css("display", "none");
+        $("#header").css("display", "none");
+        $("#selectLocationContext").css("display", "none");
+        $("#customerContext").css("display", "none");
+        $("#registerCustomerContext").css("display", "none");
+        $("#selectVehicleContext").css("display", "none");
+        $("#ADriverContext").css("display", "none");
+    });
+    $(".Customerbtn").click(function () {
+        $("#registerCustomer").css("display", "block");
+        $(".AdminForm").css("display", "block");
+        $("#registerCarContext").css("display", "none");
+        $("#bookingCarContext").css("display", "none");
+        $("#registerDriverContext").css("display", "none");
+        $("#header").css("display", "none");
+        $("#selectLocationContext").css("display", "none");
+        $("#customerContext").css("display", "none");
+        $("#selectVehicleContext").css("display", "none");
+        $("#ADriverContext").css("display", "none");
     });
     const basecustomer = "http://localhost:8080/SpringCourceWork_war_exploded/customer";
     const baseOrder = "http://localhost:8080/SpringCourceWork_war_exploded/reservation";

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdminForm</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+    section > div > button {
+        border-radius: 20px;
+    }
+
+    .text {
+        position: relative;
+        left: 50px;
+    }
+
+    .cborder {
+        position: absolute;
+        top: 103px;
+        left: -548px;
+        right: 0;
+        bottom: 0;
+        height: 500px;
+        margin: auto;
+        border: 2px solid #6c757d;
+        width: 500px;
+        border-radius: 20px;
+    }
+
+    .customerTable {
+        position: absolute;
+        top: 121px;
+        right: 162px;
+        bottom: -28px;
+    }
+</style>
+<body>
+<section>
+    <section class="container-fluid p-2 bg-danger text-white">
+        <h1 class="fw-bold">Admin Form...</h1>
+    </section>
+    <section>
+        <div class="adminButtons container-fluid p-2 bg-black text-white btn-lg">
+            <button class="btn-lg ">Booking Form</button>
+            <button class="">Drivers</button>
+            <button class="">Cars</button>
+            <button class="">Customers</button>
+        </div>
+    </section>
+</section>
+<!--
+<section id="registerCustomerContext">
+    <section class="container-fluid p-2 bg-black text-white">
+        <h1 class="fw-bold">Drivers...</h1>
+    </section>
+    <img src="assets/images/orderPagei.png">
+
+    <div id="leftsideImage"></div>
+    <form id="customerForme">
+        <div class="cborder">
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="DId">Driver ID</label>
+                <input class="form-control" id="DId" name="DId" type="text">
+            </div>
+            <div class="text  col-lg-9 ">
+                <label class="form-label" for="dname">Driver Name</label>
+                <input class="form-control" id="dname" name="dname"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="daddress">Driver Address</label>
+                <input class="form-control" id="daddress" name="daddress"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="dsalary">Driver Salary</label>
+                <input class="form-control" id="dsalary" name="dsalary"
+                       type="text">
+            </div>
+            <div class="text col-lg-9 ">
+                <label class="form-label" for="dteliphone">Driver Teliphone</label>
+                <input class="form-control" id="dteliphone" name="dteliphone"
+                       type="text">
+            </div>
+            <div class="text col-lg-9">
+                <label class="form-label" for="Drivinglicen">Driving Licence</label>
+                <input class="form-control" id="Drivinglicen" name="Drivinglicen"
+                       type="text">
+            </div>
+            <div class="text col-lg-9">
+                <label class="form-label" for="joindate">Driver Join Date</label>
+                <input class="form-control" id="joindate" name="joindate"
+                       type="text">
+            </div>
+            <div class="mb-3 m-3">
+                <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
+                <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
+                <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
+                <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
+            </div>
+        </div>
+    </form>
+    <div class="customerTable">
+        <div class="col-6 mt-lg-5 mb-3">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th> ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Salary</th>
+                    <th>Teliphone</th>
+                    <th>Licence</th>
+                    <th>Join Date</th>
+
+                </tr>
+                </thead>
+                <tbody id="tblCustomerJson">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+-->
+<section id="registerCarContext">
+    <section class="container-fluid p-2 bg-black text-white">
+        <h1 class="fw-bold">Cars...</h1>
+    </section>
+    <img src="assets/images/orderPagei.png">
+
+    <form id="carForme">
+        <div class="cborder">
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="carId">Car ID</label>
+                <input class="form-control" id="carId" name="carId" type="text">
+            </div>
+            <div class="text  col-lg-9 ">
+                <label class="form-label" for="plateNo">Plate No</label>
+                <input class="form-control" id="plateNo" name="plateNo"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="dailyprice">Daily Price</label>
+                <input class="form-control" id="dailyprice" name="DailyPrice"
+                       type="text">
+            </div>
+            <div class=" text col-lg-9 ">
+                <label class="form-label" for="miladge">Miladge</label>
+                <input class="form-control" id="miladge" name="miladge"
+                       type="text">
+            </div>
+            <div class="text col-lg-9 ">
+                <label class="form-label" for="qty">Car Qty</label>
+                <input class="form-control" id="qty" name="carQty"
+                       type="text">
+            </div>
+            <div class="text col-lg-9">
+                <label class="form-label" for="carModel">Model</label>
+                <input class="form-control" id="carModel" name="Model"
+                       type="text">
+            </div>
+
+            <div class="mb-5 m-4 m">
+                <button class="btn btn-primary" id="btnSaveCar" type="button">Save</button>
+                <button class="btn btn-warning" id="btnUpdateCar" type="button">Update</button>
+                <button class="btn btn-danger" id="btnDeleteCar" type="button">Delete</button>
+                <button class="btn btn-success" id="btnGetAllCar" type="button">Get All</button>
+            </div>
+        </div>
+    </form>
+    <div class="customerTable">
+        <div class="col-6 mt-lg-5 mb-3">
+            <table class="table table-bordered table-hover">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th> ID</th>
+                    <th>Plate</th>
+                    <th>Daily price</th>
+                    <th>Miladge</th>
+                    <th>Car Qty</th>
+                    <th>Model</th>
+                </tr>
+                </thead>
+                <tbody id="tblCarJson">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+</body>
+</html>
