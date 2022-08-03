@@ -442,6 +442,7 @@
     .viewPage {
         height: 76vh;
     }
+
     section > div > button {
         border-radius: 20px;
     }
@@ -470,6 +471,7 @@
         top: -283px;
         margin: auto;
     }
+
     .cusborder {
         position: absolute;
         top: 32px;
@@ -558,11 +560,11 @@ dash Board Form
         <h1 class="fw-bold">Customer</h1>
     </section>
     <div id="leftsideImage"></div>
-    <form class="customerForme">
+    <form id="customerForme">
         <div class="cusborder">
             <div class=" text col-lg-9 ">
                 <label class="form-label" for="cusID">Customer ID</label>
-                <input class="form-control" id="cusID" name="cId" placeholder="Customer ID" type="text">
+                <input class="form-control" id="cusID" name="cId" type="text">
             </div>
             <div class="text  col-lg-9 ">
                 <label class="form-label" for="cusName">Customer Name</label>
@@ -571,7 +573,7 @@ dash Board Form
             </div>
             <div class=" text col-lg-9 ">
                 <label class="form-label" for="cusAddress">Customer Address</label>
-                <input class="form-control" id="cusAddress" name="caddress"
+                <input class="form-control" id="cusAddress" name="address"
                        type="text">
             </div>
             <div class=" text col-lg-9 ">
@@ -587,21 +589,24 @@ dash Board Form
             </div>
             <div class="text col-lg-9 ">
                 <label class="form-label" for="cusLicen">Driving Licen</label>
-                <input class="form-control" id="cusLicen" name="DrivingLicence"
+                <input class="form-control" id="cusLicen" name="licence"
                        type="text">
             </div>
             <div class="text col-lg-9">
                 <label class="form-label" for="cusTel">Teliphone No.</label>
-                <input class="form-control" id="cusTel" name="Tnumber"
+                <input class="form-control" id="cusTel" name="Number"
                        type="text">
             </div>
             <div class="mt-5">
-                <button class="btn btn-primary col-lg-12" id="btnSaveCustomer" type="button">Register Customer</button>
+                <button class="btn btn-primary col-lg-12" id="btnSaveCustomer" type="button">Register
+                    Customer
+                </button>
             </div>
         </div>
     </form>
     <div id="sideImage"></div>
 </section>
+
 <section id="selectLocationContext">
     <section>
         <section class="container-fluid p-2 bg-black text-white">
@@ -681,70 +686,72 @@ dash Board Form
                         </div>
                     </section>
                     <section id="bookingCarContext">
-                        <div class="reserrow">
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="reservationId">Reservation Id</label>
-                                <input class="form-control" id="reservationId" name="reservationId"
-                                       type="text">
-                            </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="DId">Customer Id</label>
-                                <input class="form-control" id="cId" name="cId"
-                                       type="text">
-                            </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="DId">Driver Id</label>
-                                <input class="form-control" id="DId" name="DId"
-                                       type="text">
-                            </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="palteNo">Plate NO</label>
-                                <input class="form-control" id="palteNo" name="palteNo"
-                                       type="text">
-                            </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="rdate">Reservation Date</label>
-                                <input class="form-control" id="rDate" name="ReservasionDate"
-                                       type="text">
-                            </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="pdate">pickup Date</label>
-                                <input class="form-control" id="pdate" name="pickupdate"
-                                       type="text">
-                            </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="time">Time</label>
-                                <input class="form-control" id="time" name="time"
-                                       type="text">
-                            </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="DId">Pickup Location</label>
-                                <input class="form-control" id="plocation" name="pickupLocation"
-                                       type="text">
-                            </div>
+                        <form id="BookingForm">
+                            <div class="reserrow">
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="reservationId">Reservation Id</label>
+                                    <input class="form-control" id="reservationId" name="reservationId"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="DId">Customer Id</label>
+                                    <input class="form-control" id="cId" name="cId"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="DId">Driver Id</label>
+                                    <input class="form-control" id="DId" name="DId"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="model">Car Model</label>
+                                    <input class="form-control" id="model" name="cModel"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="rdate">Reservation Date</label>
+                                    <input class="form-control" id="rDate" name="ReservasionDate"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="pdate">pickup Date</label>
+                                    <input class="form-control" id="pdate" name="pickupdate"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="time">Time</label>
+                                    <input class="form-control" id="time" name="time"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="DId">Pickup Location</label>
+                                    <input class="form-control" id="plocation" name="pickupLocation"
+                                           type="text">
+                                </div>
 
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="DId">Your Location</label>
-                                <input class="form-control" id="ylocation" name="yourLocation"
-                                       type="text">
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="DId">Your Location</label>
+                                    <input class="form-control" id="ylocation" name="yourLocation"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="DId">No Of Days</label>
+                                    <input class="form-control" id="ndays" name="NoOfDays"
+                                           type="text">
+                                </div>
+                                <div class="text  col-lg-9 ">
+                                    <label class="form-label" for="DId">Total Cost</label>
+                                    <input class="form-control" id="totalCost" name="TotalCost"
+                                           type="text">
+                                </div>
                             </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="DId">No Of Days</label>
-                                <input class="form-control" id="ndays" name="NoOfDays"
-                                       type="text">
+                            <div id="Book">
+                                <button id="btnBooking" type="button" class="booking fw-bold">Booking</button>
                             </div>
-                            <div class="text  col-lg-9 ">
-                                <label class="form-label" for="DId">Total Cost</label>
-                                <input class="form-control" id="totalCost" name="TotalCost"
-                                       type="text">
+                            <div id="Cansel">
+                                <button class="cansel fw-bold">Cancel</button>
                             </div>
-                        </div>
-                        <div id="Book">
-                            <button class="booking fw-bold">Booking</button>
-                        </div>
-                        <div id="Cansel">
-                            <button class="cansel fw-bold">Cancel</button>
-                        </div>
+                        </form>
                     </section>
                 </div>
             </div>
@@ -754,7 +761,7 @@ dash Board Form
 
         </div>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=[enter your Api]=places"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=[Enter Your APi]=places"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="assets/js/location.js"></script>
     </section>
@@ -856,32 +863,32 @@ dash Board Form
     <form id="carForme">
         <div class="cborder">
             <div class=" text col-lg-9 ">
-                <label class="form-label" for="carId">Car ID</label>
-                <input class="form-control" id="carId" name="carId" type="text">
+                <label class="form-label" for="txtcarId">Car ID</label>
+                <input class="form-control" id="txtcarId" name="carId" type="text">
             </div>
             <div class="text  col-lg-9 ">
-                <label class="form-label" for="plateNo">Plate No</label>
-                <input class="form-control" id="plateNo" name="plateNo"
+                <label class="form-label" for="txtplateNo">Plate No</label>
+                <input class="form-control" id="txtplateNo" name="plateNo"
                        type="text">
             </div>
             <div class=" text col-lg-9 ">
-                <label class="form-label" for="dailyprice">Daily Price</label>
-                <input class="form-control" id="dailyprice" name="DailyPrice"
+                <label class="form-label" for="txtdailyprice">Daily Price</label>
+                <input class="form-control" id="txtdailyprice" name="DailyPrice"
                        type="text">
             </div>
             <div class=" text col-lg-9 ">
-                <label class="form-label" for="miladge">Miladge</label>
-                <input class="form-control" id="miladge" name="miladge"
+                <label class="form-label" for="txtmiladge">Miladge</label>
+                <input class="form-control" id="txtmiladge" name="miladge"
                        type="text">
             </div>
             <div class="text col-lg-9 ">
-                <label class="form-label" for="qty">Car Qty</label>
-                <input class="form-control" id="qty" name="carQty"
+                <label class="form-label" for="txtqty">Car Qty</label>
+                <input class="form-control" id="txtqty" name="carQty"
                        type="text">
             </div>
             <div class="text col-lg-9">
-                <label class="form-label" for="carModel">Model</label>
-                <input class="form-control" id="carModel" name="Model"
+                <label class="form-label" for="txtcarModel">Model</label>
+                <input class="form-control" id="txtcarModel" name="Model"
                        type="text">
             </div>
 
@@ -922,45 +929,39 @@ dash Board Form
 <section id="registerCustomer">
     <img src="assets/images/orderPagei.png">
 
-    <form class="customerForme">
+    <form id="AdmincustomerForme">
         <div class="cborder">
             <div class=" text col-lg-9 ">
                 <label class="form-label" for="cusID">Customer ID</label>
-                <input class="form-control" id="custID" name="cId" placeholder="Customer ID" type="text">
+                <input class="form-control" id="crustID" name="cId" type="text">
             </div>
             <div class="text  col-lg-9 ">
                 <label class="form-label" for="cusName">Customer Name</label>
-                <input class="form-control" id="custName" name="cname"
-                       type="text">
+                <input class="form-control" id="crustName" name="cname" type="text">
             </div>
             <div class=" text col-lg-9 ">
                 <label class="form-label" for="cusAddress">Customer Address</label>
-                <input class="form-control" id="custAddress" name="caddress"
-                       type="text">
+                <input class="form-control" id="crustAddress" name="address" type="text">
             </div>
             <div class=" text col-lg-9 ">
                 <label class="form-label" for="cuscity">City</label>
-                <input class="form-control" id="custCity" name="city"
-                       type="text">
+                <input class="form-control" id="crustCity" name="city" type="text">
             </div>
 
             <div class=" text col-lg-9 ">
-                <label class="form-label" for="cusAddress">House No</label>
-                <input class="form-control" id="custHouseNo" name="houseNo"
-                       type="text">
+                <label class="form-label" for="crustHouseNo">House No</label>
+                <input class="form-control" id="crustHouseNo" name="houseNo" type="text">
             </div>
             <div class="text col-lg-9 ">
                 <label class="form-label" for="cusLicen">Driving Licen</label>
-                <input class="form-control" id="custLicen" name="DrivingLicence"
-                       type="text">
+                <input class="form-control" id="custLicen" name="licence" type="text">
             </div>
             <div class="text col-lg-9">
                 <label class="form-label" for="cusTel">Teliphone No.</label>
-                <input class="form-control" id="custTel" name="Tnumber"
-                       type="text">
+                <input class="form-control" id="crustTel" name="Number" type="text">
             </div>
             <div class="mb-3 m-3">
-                <button class="btn btn-primary" id="btnSaveCustomerr" type="button">Save</button>
+                <button class=" btn btn-primary" id="SaveCustomer" type="button">Save</button>
                 <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
                 <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete</button>
                 <button class="btn btn-success" id="btnGetAllCustomers" type="button">Get All</button>
@@ -998,7 +999,6 @@ dash Board Form
 </section>
 
 
-
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
@@ -1017,7 +1017,6 @@ dash Board Form
     $("#registerCustomer").css("display", "none");
 
 
-
     $("#LinkVehicle").click(function () {
         $("#registerCustomerContext").css("display", "block");
         $("#header").css("display", "none");
@@ -1028,21 +1027,6 @@ dash Board Form
         $("#registerCarContext").css("display", "none");
         $("#registerCustomer").css("display", "none");
         $("#registerDriverContext").css("display", "none");
-
-
-
-    });
-    $("#btnSaveCustomer").click(function () {
-        $("#selectLocationContext").css("display", "block");
-        $("#registerCustomerContext").css("display", "none");
-        $("#header").css("display", "none");
-        $("#customerContext").css("display", "none");
-        $("#selectVehicleContext").css("display", "none");
-        $("#bookingCarContext").css("display", "none");
-        $(".AdminForm").css("display", "none");
-        $("#registerCarContext").css("display", "none");
-        $("#registerDriverContext").css("display", "none");
-        $("#registerCustomer").css("display", "none");
 
 
     });
@@ -1087,6 +1071,7 @@ dash Board Form
     $(".Driverbtn").click(function () {
         $("#registerDriverContext").css("display", "block");
         $(".AdminForm").css("display", "block");
+        $("#registerCarContext").css("display", "none");
         $("#header").css("display", "none");
         $("#selectLocationContext").css("display", "none");
         $("#customerContext").css("display", "none");
@@ -1099,6 +1084,7 @@ dash Board Form
 
     $(".Carbtn").click(function () {
         $("#registerCarContext").css("display", "block");
+        $("#registerCustomer").css("display", "none");
         $(".AdminForm").css("display", "block");
         $("#bookingCarContext").css("display", "none");
         $("#registerDriverContext").css("display", "none");
@@ -1122,14 +1108,37 @@ dash Board Form
         $("#ADriverContext").css("display", "none");
     });
     const basecustomer = "http://localhost:8080/SpringCourceWork_war_exploded/customer";
-    const baseOrder = "http://localhost:8080/SpringCourceWork_war_exploded/reservation";
+    const basecar = "http://localhost:8080/SpringCourceWork_war_exploded/car";
+    const basedriver = "http://localhost:8080/SpringCourceWork_war_exploded/driver";
+    const basereservation = "http://localhost:8080/SpringCourceWork_war_exploded/reservation";
 
+    loadAllCustomers();
 
     $("#btnSaveCustomer").click(function () {
         saveCustomer();
+        var val = $("#cusID").val();
+        var val1 = $("#cId").text(val);
+        console.log(val1);
+
+    });
+    $("#SaveCustomer").click(function () {
+        ACustomer();
+
+    });
+    $("#btnSaveCar").click(function () {
+        saveCar();
     });
     $("#btnSaveOrder").click(function () {
         saveOrder();
+    });
+    $("#btnSaveDriver").click(function () {
+        saveDriver();
+    });
+    $("#btnDeleteCustomer").click(function () {
+        deleteCustomer();
+    });
+    $("#btnUpdateCustomer").click(function () {
+        updateCustomers();
     });
     $("#from").click(function () {
         $("#title").text("Where can we pick you up?");
@@ -1140,6 +1149,7 @@ dash Board Form
 
     function saveCustomer() {
         var data = $("#customerForme").serialize(); // return query string of form with name:type-value
+
         $.ajax({
             url: basecustomer,
             method: "POST",
@@ -1148,10 +1158,71 @@ dash Board Form
                 if (res.code == 200) {
                     var valert = confirm("Successfully Customer Registered");
                     if (valert == true) {
-
+                        $("#selectLocationContext").css("display", "block");
+                        $("#registerCustomerContext").css("display", "none");
+                        $("#header").css("display", "none");
+                        $("#customerContext").css("display", "none");
+                        $("#selectVehicleContext").css("display", "none");
+                        $("#bookingCarContext").css("display", "none");
+                        $(".AdminForm").css("display", "none");
+                        $("#registerCarContext").css("display", "none");
+                        $("#registerDriverContext").css("display", "none");
+                        $("#registerCustomer").css("display", "none");
+                    } else {
+                        confirm(" Customer Already Registered");
                     }
-                } else {
-                    alert("Successfully Customer Registered");
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function ACustomer() {
+        var data = $("#AdmincustomerForme").serialize(); // return query string of form with name:type-value
+        $.ajax({
+            url: basecustomer,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code == 200) {
+                    loadAllCustomers();
+                    confirm("Successfully Customer Registered");
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function saveCar() {
+        var data = $("#carForme").serialize();
+        $.ajax({
+            url: basecar,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code == 200) {
+                    confirm("Successfully Car Registered");
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function saveDriver() {
+        var data = $("#driverForm").serialize();
+        $.ajax({
+            url: basedriver,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code == 200) {
+                    confirm("Successfully Driver Registered");
                 }
             },
             error: function (ob) {
@@ -1174,6 +1245,181 @@ dash Board Form
             error: function (ob) {
                 alert(ob.responseJSON.message);
             }
+        });
+    }
+
+    $("#custID").on("keypress", function (e) {
+        if (e.key == "Enter") {
+            searchCustomer();
+        }
+    });
+
+    $("#txtcarId").on("keypress", function (e) {
+        if (e.key == "Enter") {
+            searchCar();
+        }
+    });
+
+    function searchCustomer() {
+        var customerID = $("#crustID").val();
+
+        $.ajax({
+            url: basecustomer + "/" + customerID,
+            method: "GET",
+            success: function (res) {
+                if (res.code = 200) {
+                    var customer = res.data;
+                    $("#crustID").val(customer.cid);
+                    $("#crustName").val(customer.cname);
+                    $("#crustAddress").val(customer.address);
+                    $("#crustHouseNo").val(customer.houseNo);
+                    $("#custLicen").val(customer.licence);
+                    $("#crustTel").val(customer.number);
+                    $("#crustCity").val(customer.city);
+                } else {
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function bindClickEvent() {
+        $("#tablecustomer>tr").click(function () {
+            let cid = $(this).children().eq(0).text();
+            let cname = $(this).children().eq(1).text();
+            let caddress = $(this).children().eq(2).text();
+            let ccity = $(this).children().eq(3).text();
+            let hnumber = $(this).children().eq(4).text();
+            let clicence = $(this).children().eq(5).text();
+            let cteliphone = $(this).children().eq(6).text();
+
+
+            //Set values to the text-fields
+            $("#crustID").val(cid);
+            $("#crustName").val(cname);
+            $("#crustAddress").val(caddress);
+            $("#crustHouseNo").val(hnumber);
+            $("#custLicen").val(clicence);
+            $("#crustTel").val(cteliphone);
+            $("#crustCity").val(ccity);
+        });
+    }
+
+    function searchCar() {
+        var carId = $("#txtcarId").val();
+
+        $.ajax({
+            url: basecar + "/" + carId,
+            method: "GET",
+            success: function (res) {
+                if (res.code = 200) {
+                    var car = res.data;
+                    console.log(car);
+                    $("#txtcarId").val(car.carId);
+                    $("#txtplateNo").val(car.plateNo);
+                    $("#txtdailyprice").val(car.DailyPrice);
+                    $("#txtmiladge").val(car.miladge);
+                    $("#txtqty").val(car.carQty);
+                    $("#txtcarModel").val(car.Model);
+                } else {
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function deleteCustomer() {
+        // Get the customer id
+        let customerID = $("#crustID").val();
+
+        // initiate the request
+        $.ajax({
+            url: basecustomer + "?id=" + customerID,// viya query string
+            method: "DELETE",
+            //data:data,// application/x-www-form-urlencoded
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Customer Successfully Deleted");
+                    loadAllCustomers();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function updateCustomers() {
+        var cus = {
+            id: $("#crustID").val(),
+            name: $("#crustName").val(),
+            address: $("#crustAddress").val(),
+            city: $("#crustCity").val(),
+            houseno: $("#crustHouseNo").val(),
+            license: $("#custLicen").val(),
+            teliphone: $("#crustTel").val(),
+        }
+        console.log(cus);
+        $.ajax({
+            url: basecustomer,
+            method: "PUT",
+            contentType: "application/json",
+            data: JSON.stringify(cus),
+            success: function (res) {
+
+                if (res.code == 200) {
+                    alert("Successfully Updated");
+                    loadAllCustomers();
+                }
+
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+
+            }
+        });
+    }
+
+    function loadAllCustomers() {
+        $("#tablecustomer").empty();
+        $.ajax({
+            url: basecustomer,
+            method: "GET",
+            success: function (resp) {
+                for (const customer of resp.data) {
+                    console.log(resp.data);
+                    let row = `<tr><td>${customer.cid}</td><td>${customer.cname}</td><td>${customer.address}</td><td>${customer.city}</td><td>${customer.houseNo}</td><td>${customer.licence}</td><td>${customer.number}</td></tr>`;
+                    $("#tablecustomer").append(row);
+                }
+                bindClickEvent();
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+
+            }
+        });
+    }
+
+    $("#btnBooking").click(function () {
+        BookingForm();
+    });
+
+    function BookingForm() {
+        let data = $("#BookingForm").serialize();
+        $.ajax({
+            url: basereservation,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Your Order Confirm");
+                }
+            }
+
         });
     }
 </script>

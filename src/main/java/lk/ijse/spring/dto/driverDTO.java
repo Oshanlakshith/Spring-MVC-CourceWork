@@ -15,5 +15,6 @@ public class driverDTO {
     private String daddress;
     private String dsalary;
     private String dteliphone;
+    private String drivinglicen;
     private String joindate;
 }

@@ -23,6 +23,7 @@ public class DriverController {
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponceUtil saveDriver(driverDTO driverDTO) {
+        System.out.println(driverDTO);
         driverServise.saveDriver(driverDTO);
         return new ResponceUtil(200, "Save", null);
     }

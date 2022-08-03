@@ -5,22 +5,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @ToString
 public class CustomerDTO {
-    @Id
     private String cId;
     private String cname;
-    private String cAddress;
-    private String DrivingLicence;
+    private String address;
+    private String licence;
     private String city;
     private  String houseNo;
-    private String Tnumber;
+    private String Number;
 
 }

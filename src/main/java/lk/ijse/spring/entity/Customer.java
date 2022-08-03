@@ -17,9 +17,9 @@ public class Customer {
     @Id
     private String cId;
     private String cname;
-    private String cAddress;
-    private String DrivingLicence;
+    private String address;
+    private String licence;
     private String city;
     private  String houseNo;
-    private String Tnumber;
+    private String Number;
 }

@@ -12,15 +12,12 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Data
 @ToString
-@IdClass(reservation_PK.class)
 public class reservasion {
-    @Id
+@Id
     private String reservationId;
-    @Id
     private String cId;
-    @Id
     private String DId;
-    private String palteNo;
+    private String cModel;
     private String ReservasionDate;
     private String pickupdate;
     private String time;
@@ -29,12 +26,12 @@ public class reservasion {
     private String NoOfDays;
     private String TotalCost;
 
-    @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
+   /* @ManyToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH})
     @JoinColumn(name = "customerID",referencedColumnName = "cId",nullable = false)
     private Customer customer;
 
     @ManyToOne
     @JoinColumn(name = "DriverId",referencedColumnName = "DId",insertable = false,updatable = false)
-    private Driver driver;
+    private Driver driver;*/
 
 }

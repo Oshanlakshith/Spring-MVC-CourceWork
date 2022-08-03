@@ -20,6 +20,6 @@ public class Driver {
     private String daddress;
     private String dsalary;
     private String dteliphone;
-    private String Drivinglicen;
+    private String drivinglicen;
     private String joindate;
 }
