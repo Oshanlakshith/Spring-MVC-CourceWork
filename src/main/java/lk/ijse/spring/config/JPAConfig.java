@@ -2,6 +2,7 @@ package lk.ijse.spring.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
@@ -41,7 +42,6 @@ public class JPAConfig {
         dataSource.setUrl(env.getRequiredProperty("my.app.url"));
         dataSource.setUsername(env.getRequiredProperty("my.app.username"));
         dataSource.setPassword(env.getRequiredProperty("my.app.password"));
-        System.out.println("jpaConfigTes");
         dataSource.setDriverClassName(env.getRequiredProperty("my.app.driverclassname"));
         return dataSource;
     }

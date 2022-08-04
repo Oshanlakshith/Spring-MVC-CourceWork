@@ -12,6 +12,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 public class WebAppConfig {
     @Bean
     public ModelMapper modelMapper(){
+        System.out.println("WebAppConfig");
         return new ModelMapper();
     }
 }
